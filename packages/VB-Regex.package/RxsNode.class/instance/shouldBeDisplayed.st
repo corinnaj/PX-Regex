@@ -1,4 +1,4 @@
 testing
 shouldBeDisplayed
 
-	^ false
+	^ true
