@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"beCaseInsensitive" : "",
+		"beCaseSensitive" : "",
+		"character:ignoreCase:" : "",
+		"initialize" : "",
+		"matchAgainst:" : "",
+		"postCopy" : "ul 5/19/2016 23:23",
+		"postCopyUsing:" : "ul 5/20/2016 00:43",
+		"sampleStream" : "",
+		"substring:ignoreCase:" : "" } }

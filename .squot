@@ -1,0 +1,4 @@
+OrderedDictionary {
+	'packages\/PX-Regex.package' : #SquotCypressCodeSerializer,
+	'packages\/VB-Regex.package' : #SquotCypressCodeSerializer
+}

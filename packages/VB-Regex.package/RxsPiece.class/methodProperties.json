@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"atom" : "",
+		"character" : "",
+		"color" : "lcj 5/7/2018 23:00",
+		"describe" : "lcj 4/29/2018 11:13",
+		"dispatchTo:" : "",
+		"initializeAtom:" : "",
+		"initializeAtom:min:max:" : "",
+		"initializeOptionalAtom:" : "",
+		"initializePlusAtom:" : "",
+		"initializeStarAtom:" : "",
+		"isAtomic" : "",
+		"isNullable" : "",
+		"isOptional" : "",
+		"isPlus" : "",
+		"isSingular" : "",
+		"isStar" : "",
+		"max" : "",
+		"min" : "",
+		"shouldBeDisplayed" : "lcj 5/7/2018 23:05" } }

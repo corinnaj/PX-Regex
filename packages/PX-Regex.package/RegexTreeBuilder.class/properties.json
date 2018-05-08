@@ -1,0 +1,14 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"root" ],
+	"name" : "RegexTreeBuilder",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

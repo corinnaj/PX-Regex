@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"beAny" : "",
+		"beBeginningOfLine" : "",
+		"beBeginningOfWord" : "",
+		"beEndOfLine" : "",
+		"beEndOfWord" : "",
+		"beNonWordBoundary" : "",
+		"beWordBoundary" : "",
+		"color" : "lcj 5/7/2018 11:53",
+		"describe" : "lcj 4/28/2018 22:38",
+		"dispatchTo:" : "",
+		"isNullable" : "",
+		"shouldBeDisplayed" : "lcj 5/7/2018 22:40" } }

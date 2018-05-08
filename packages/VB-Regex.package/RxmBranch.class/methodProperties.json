@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"alternative:" : "",
+		"beLoopback" : "",
+		"initialize" : "",
+		"matchAgainst:" : "",
+		"pointTailTo:" : "",
+		"postCopy" : "ul 8/23/2015 13:00",
+		"postCopyUsing:" : "ul 5/20/2016 00:44",
+		"shouldBeDisplayed" : "lcj 5/7/2018 22:37",
+		"terminateWith:" : "" } }
