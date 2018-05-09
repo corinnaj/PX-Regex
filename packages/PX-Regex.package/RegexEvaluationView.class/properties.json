@@ -6,10 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"explanationLabel",
-		"container" ],
-	"name" : "RegexExplanationView",
+		"regexEntry",
+		"stringEntry" ],
+	"name" : "RegexEvaluationView",
 	"pools" : [
 		 ],
-	"super" : "PHWidget",
+	"super" : "PHExample",
 	"type" : "normal" }

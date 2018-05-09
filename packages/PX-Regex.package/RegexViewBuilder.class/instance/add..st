@@ -4,6 +4,7 @@ add: aBranchOrRegex
 	aBranchOrRegex shouldBeDisplayed ifTrue: [
 		self addMorphBack: (RegexViewPart new
 			part: aBranchOrRegex;
+			builder: self;
 			color: aBranchOrRegex color;
 			yourself)].
 

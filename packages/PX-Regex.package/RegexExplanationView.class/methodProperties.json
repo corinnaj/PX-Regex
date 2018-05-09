@@ -2,5 +2,7 @@
 	"class" : {
 		"openForRegex:" : "lcj 5/9/2018 14:40" },
 	"instance" : {
-		"forRegex:" : "lcj 5/9/2018 14:43",
-		"initialize" : "lcj 5/9/2018 14:44" } }
+		"container" : "lcj 5/9/2018 17:18",
+		"displayExplanation:" : "lcj 5/9/2018 17:40",
+		"forRegex:" : "lcj 5/9/2018 18:03",
+		"initialize" : "lcj 5/9/2018 18:08" } }
