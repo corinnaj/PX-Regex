@@ -1,4 +1,4 @@
 testing
 color
 
-	^ Color red
+	^ Color fromString: '#26A69A'

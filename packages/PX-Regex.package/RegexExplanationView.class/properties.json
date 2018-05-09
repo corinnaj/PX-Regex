@@ -1,0 +1,14 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RegexExplanationView",
+	"pools" : [
+		 ],
+	"super" : "PHWidget",
+	"type" : "normal" }

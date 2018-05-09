@@ -1,4 +1,4 @@
 accessing
 color
 
-	^ Color green
+	^ Color fromString: '#EC407A'

@@ -1,4 +1,4 @@
 initialize-release
 color
 
-	^ Color yellow
+	^ Color fromString: '#7E57C2'

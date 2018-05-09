@@ -1,4 +1,4 @@
 accessing
 color
 
-	^ Color lightBlue
+	^ Color fromString: '#42A5F5'
