@@ -4,4 +4,3 @@ forRegex: pattern
 	initialState := NFAState new.
 	
 	self addStateFor: parsedRegexRoot branch currentState: initialState.
-	^self

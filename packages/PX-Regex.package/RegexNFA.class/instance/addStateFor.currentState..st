@@ -1,17 +1,29 @@
 construction
 addStateFor: regexBranch currentState: currentState
-	| regexPiece targetState transition |
+	| regexPiece targetState newStateString |
 	regexBranch ifNil: [^nil].
 	
 	regexPiece := regexBranch piece.
-	targetState := NFAState new stateString: currentState stateString , regexPiece atom character; yourself.
-
-	transition := NFATransition new
+	
+	newStateString := currentState stateString , regexPiece atom character.
+	regexPiece isPlus ifTrue: [newStateString := newStateString , $+].
+	
+	targetState := NFAState new 
+		stateString: newStateString; 
+		yourself.
+	
+	currentState addTransition: (NFATransition new
 		originState: currentState;
 		targetState: targetState;
 		transitionTrigger: regexPiece atom character;
-		yourself.
+		yourself).
 	
-	currentState transitions add: transition.
+	regexPiece max ifNil: [
+		targetState addTransition: (NFATransition new
+			originState: targetState;
+			targetState: targetState;
+			transitionTrigger: regexPiece atom character;
+			yourself).
+	].
 	
 	self addStateFor: regexBranch branch currentState: targetState.

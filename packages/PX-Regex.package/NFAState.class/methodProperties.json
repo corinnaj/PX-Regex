@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addTransition:" : "pf 5/11/2018 11:32",
 		"initialize" : "pf 5/10/2018 12:14",
 		"stateString" : "pf 5/10/2018 11:53",
-		"stateString:" : "pf 5/10/2018 11:54",
-		"transitions" : "pf 5/10/2018 11:54" } }
+		"stateString:" : "pf 5/10/2018 11:54" } }
