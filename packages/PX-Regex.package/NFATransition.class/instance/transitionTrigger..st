@@ -1,3 +1,3 @@
 accessing
-transitionTrigger: anObject
-	transitionTrigger := anObject
+transitionTrigger: aRxsPiece
+	transitionTrigger := aRxsPiece

@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addStateFor:currentState:" : "pf 5/11/2018 11:32",
-		"forRegex:" : "pf 5/11/2018 10:30" } }
+		"addStateFor:currentState:" : "pf 5/11/2018 12:31",
+		"addStateFor:stateString:" : "pf 5/11/2018 13:00",
+		"forRegex:" : "pf 5/11/2018 13:01" } }

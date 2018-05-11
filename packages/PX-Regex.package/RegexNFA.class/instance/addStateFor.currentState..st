@@ -13,16 +13,14 @@ addStateFor: regexBranch currentState: currentState
 		yourself.
 	
 	currentState addTransition: (NFATransition new
-		originState: currentState;
 		targetState: targetState;
-		transitionTrigger: regexPiece atom character;
+		transitionTrigger: regexPiece;
 		yourself).
 	
 	regexPiece max ifNil: [
 		targetState addTransition: (NFATransition new
-			originState: targetState;
 			targetState: targetState;
-			transitionTrigger: regexPiece atom character;
+			transitionTrigger: regexPiece;
 			yourself).
 	].
 	

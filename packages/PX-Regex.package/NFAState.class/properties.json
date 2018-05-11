@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"transitions",
-		"stateString" ],
+		"stateString",
+		"canonicalTransition" ],
 	"name" : "NFAState",
 	"pools" : [
 		 ],
