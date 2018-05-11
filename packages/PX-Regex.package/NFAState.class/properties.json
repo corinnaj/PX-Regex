@@ -1,0 +1,15 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"transitions",
+		"stateString" ],
+	"name" : "NFAState",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

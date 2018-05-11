@@ -1,0 +1,15 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parsedRegexRoot",
+		"initialState" ],
+	"name" : "RegexNFA",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
