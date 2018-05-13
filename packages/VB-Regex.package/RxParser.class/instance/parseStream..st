@@ -8,6 +8,6 @@ parseStream: aStream
 	input := aStream.
 	lookahead := nil.
 	self match: nil.
-	tree := self regex.
+	tree := self recordingRangeDo: #regex.
 	self match: #epsilon.
 	^tree

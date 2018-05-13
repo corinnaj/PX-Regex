@@ -6,12 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"part",
-		"hovered",
-		"builder",
-		"range" ],
-	"name" : "RegexViewPart",
+		"regex",
+		"view",
+		"container",
+		"explanationLabel" ],
+	"name" : "RegexExplanationTool",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "PHTool",
 	"type" : "normal" }

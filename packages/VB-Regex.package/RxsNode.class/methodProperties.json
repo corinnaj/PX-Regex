@@ -3,8 +3,11 @@
 		 },
 	"instance" : {
 		"children" : "lcj 4/28/2018 22:23",
+		"describe" : "lcj 5/13/2018 22:03",
 		"explanation" : "lcj 5/9/2018 17:59",
 		"indentCharacter" : "",
 		"isAtomic" : "",
 		"isNullable" : "",
-		"shouldBeDisplayed" : "lcj 5/8/2018 10:45" } }
+		"range:" : "lcj 5/13/2018 23:16",
+		"shouldBeDisplayed" : "lcj 5/8/2018 10:45",
+		"sourceRange:" : "lcj 5/14/2018 00:04" } }

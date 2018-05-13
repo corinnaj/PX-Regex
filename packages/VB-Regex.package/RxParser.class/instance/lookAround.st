@@ -7,7 +7,7 @@ lookAround
 	or: [ lookahead == $=])
 		ifFalse: [ ^ self signalParseError: 'Invalid lookaround expression ?', lookahead asString ].
 	self next.
-	lookaround := RxsLookaround with: self regex.
+	lookaround := RxsLookaround with: (self recordingRangeDo: #regex).
 	lookahead == $!
 		ifTrue: [ lookaround beNegative ].
 	^ lookaround

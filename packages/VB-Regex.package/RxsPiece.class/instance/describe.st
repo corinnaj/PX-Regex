@@ -1,11 +1,11 @@
 accessing
 describe 
 
-	| returnString |
-	returnString := self atom describe.
+	| returnText |
+	returnText := self atom describe asText addAttribute: (TextColor color: (Color black alpha: 0.6)); yourself.
 		
-	self isStar ifTrue: [^ returnString, '*'].
-	self isPlus ifTrue: [^ returnString, '+'].
-	self isOptional ifTrue: [^ returnString, '?'].
+	self isStar ifTrue: [^ returnText, '*' asText allBold].
+	self isPlus ifTrue: [^ returnText, '+'].
+	self isOptional ifTrue: [^ returnText, '?'].
 	
-	^ returnString
+	^ returnText

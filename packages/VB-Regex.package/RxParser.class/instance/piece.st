@@ -3,7 +3,7 @@ piece
 	"<piece> ::= <atom> | <atom>* | <atom>+ | <atom>?"
 	| atom errorMessage |
 	errorMessage := ' nullable closure'.
-	atom := self atom.
+	atom := self recordingRangeDo: #atom.
 	lookahead = $* ifTrue: 
 		[self next.
 		atom isNullable ifTrue: [self signalParseError: errorMessage].

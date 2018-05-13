@@ -6,12 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"part",
-		"hovered",
-		"builder",
-		"range" ],
-	"name" : "RegexViewPart",
+		"regexEntry",
+		"stringEntry" ],
+	"name" : "PHRegexExample",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "PHExample",
 	"type" : "normal" }

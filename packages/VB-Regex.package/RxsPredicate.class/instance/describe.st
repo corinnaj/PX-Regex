@@ -1,4 +1,4 @@
 accessing
 describe 
 
-	^ self predicate asString
+	^ self predicate describe
