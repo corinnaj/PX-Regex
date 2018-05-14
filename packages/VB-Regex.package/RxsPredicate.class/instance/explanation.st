@@ -1,0 +1,4 @@
+accessing
+explanation
+
+	^ self describe

@@ -1,4 +1,4 @@
 accessing
 explanation 
 
-	^ 'Match the charachter "', self character, '" exactly'
+	^ 'Match the charachter "', self character, '"'

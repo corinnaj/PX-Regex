@@ -1,4 +1,4 @@
 accessing
 describe 
 
-	^ self predicate describe
+	^ self predicate outerContext method selector asString
