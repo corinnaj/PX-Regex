@@ -1,0 +1,15 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"trigger",
+		"out" ],
+	"name" : "TStateLiteral",
+	"pools" : [
+		 ],
+	"super" : "TState",
+	"type" : "normal" }
