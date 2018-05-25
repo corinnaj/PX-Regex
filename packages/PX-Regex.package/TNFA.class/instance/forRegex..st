@@ -14,6 +14,7 @@ forRegex: pattern
 					yourself).
 			].
 			[$|] -> [
+				"TODO check this, is it used like this: ab| instead ob a|b??"
 				fragment2 := stack pop.
 				fragment := stack pop.
 				state := TStateSplit new out: fragment start; out2: fragment2 start; yourself.
@@ -24,18 +25,19 @@ forRegex: pattern
 			].
 			[$?] -> [
 				fragment := stack pop.
+				state := TStateSplit new out: fragment start; out2: nil; yourself.
 				stack push: (TFragment new 
-					start: (TStateSplit new out: fragment start; out2: nil; yourself); 
-					outs: fragment outs; 
+					start: state; 
+					outs: fragment outs , {state outs second}; 
 					yourself).
 			].
 			[$*] -> [
 				fragment := stack pop.
 				state := TStateSplit new out: fragment start; out2: nil; yourself.
 				state patch: fragment outs.
-				stack push: (TFragment new 
+				stack push: (TFragment new
 					start: state; 
-					outs: fragment outs; 
+					outs: state outs; 
 					yourself).
 			].
 			[$+] -> [
