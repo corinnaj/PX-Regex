@@ -1,4 +1,4 @@
-as yet unclassified
+ui
 display: aString
 
 	self triggerEvent: #displayExplanation with: aString

@@ -1,7 +1,8 @@
-as yet unclassified
+building
 add: aBranchOrRegex at: aPoint from: anotherPoint
 
 	| x |
+	
 	self addMorphBack: (RegexPart new
 		part: aBranchOrRegex;
 		center: aPoint;

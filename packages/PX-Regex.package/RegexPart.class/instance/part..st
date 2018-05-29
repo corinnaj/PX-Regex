@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 part: aPart
 
 	part := aPart.

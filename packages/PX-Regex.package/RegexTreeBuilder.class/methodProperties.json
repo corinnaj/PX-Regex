@@ -2,9 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"add:at:from:" : "lcj 4/29/2018 11:27",
-		"forRegex:" : "lcj 4/28/2018 22:29",
+		"add:" : "lcj 5/29/2018 18:09",
+		"add:at:from:" : "lcj 5/29/2018 17:35",
 		"horizontalOffset" : "lcj 5/2/2018 16:44",
-		"initialize" : "lcj 4/28/2018 22:26",
 		"lineGap" : "lcj 4/28/2018 22:19",
 		"resizeToFit" : "lcj 4/28/2018 22:31" } }

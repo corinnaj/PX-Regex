@@ -6,12 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"regex",
 		"view",
 		"container",
 		"explanationLabel" ],
 	"name" : "RegexExplanationTool",
 	"pools" : [
 		 ],
-	"super" : "PHTool",
+	"super" : "PHRegexTester",
 	"type" : "normal" }

@@ -1,10 +1,6 @@
-as yet unclassified
-forRegex: aString
+layout
+resizeToFit 
 
-	root := RxParser new parse: aString.
-	
-	self add: root.
-	
 	self submorphs first position: 0 asPoint.
 	self submorphs allButFirstDo: [:s | s position: (s submorphBefore extent x + s submorphBefore position x) @ 0].
 	self bounds: (Rectangle merging: submorphs)

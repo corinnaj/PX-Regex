@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"root" ],
+		 ],
 	"name" : "RegexViewBuilder",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "RegexBuilder",
 	"type" : "normal" }
