@@ -1,0 +1,15 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"start",
+		"outs" ],
+	"name" : "TFragment",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

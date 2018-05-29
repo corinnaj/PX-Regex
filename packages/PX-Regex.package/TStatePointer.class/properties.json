@@ -1,0 +1,14 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"state" ],
+	"name" : "TStatePointer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
