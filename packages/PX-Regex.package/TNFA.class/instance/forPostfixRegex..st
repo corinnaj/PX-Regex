@@ -1,8 +1,10 @@
-construction
-forRegex: pattern
+private
+forPostfixRegex: postfixPattern
+	"all characters are taken literally except: . (concatenation), | (alternation), ? (optional), * (at least 0 repetitions), + (at least 1 repetition)"
+	"expects postfix notation: 'ab.c|' instead of 'ab|c' and 'ab.a?.*' instead of '(aba?)*'"
 	| stack fragment fragment2 state |
 	stack := Stack new.
-	pattern do: [ :character | 
+	postfixPattern do: [ :character | 
 		character caseOf: {
 			[$.] -> [
 				fragment2 := stack pop.
@@ -14,7 +16,6 @@ forRegex: pattern
 					yourself).
 			].
 			[$|] -> [
-				"TODO check this, is it used like this: ab| instead ob a|b??"
 				fragment2 := stack pop.
 				fragment := stack pop.
 				state := TStateSplit new out: fragment start; out2: fragment2 start; yourself.
