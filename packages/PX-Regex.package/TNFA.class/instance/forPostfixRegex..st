@@ -18,7 +18,7 @@ forPostfixRegex: postfixPattern
 			[$|] -> [
 				fragment2 := stack pop.
 				fragment := stack pop.
-				state := TStateSplit new out: fragment start; out2: fragment2 start; yourself.
+				state := TStateSplit new out: fragment start; out2: fragment2 start; isAlternation: true; yourself.
 				stack push: (TFragment new 
 					start: state; 
 					outs: fragment outs , fragment2 outs; 

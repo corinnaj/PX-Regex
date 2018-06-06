@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "pf 5/14/2018 15:25",
-		"isMatch" : "pf 5/14/2018 17:13",
+		"initialize" : "pf 6/6/2018 11:52",
+		"isAlternation" : "pf 6/6/2018 11:51",
+		"isAlternation:" : "pf 6/6/2018 12:42",
 		"out2:" : "pf 5/25/2018 16:40",
 		"out:" : "pf 5/14/2018 17:34",
 		"outs" : "pf 5/14/2018 16:34" } }

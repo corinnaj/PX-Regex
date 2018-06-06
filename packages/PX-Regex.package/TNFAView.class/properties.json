@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"out",
-		"out2",
-		"isAlternation" ],
-	"name" : "TStateSplit",
+		"tnfa" ],
+	"name" : "TNFAView",
 	"pools" : [
 		 ],
-	"super" : "TState",
+	"super" : "PHWidget",
 	"type" : "normal" }

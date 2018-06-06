@@ -1,3 +1,3 @@
 as yet unclassified
-isMatch
+isNull
 	^false

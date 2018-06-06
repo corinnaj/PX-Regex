@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialExtent" : "pf 6/6/2018 12:33",
+		"initialize" : "pf 6/5/2018 12:30",
+		"put:into:" : "pf 6/6/2018 12:40",
+		"show:" : "pf 6/6/2018 12:38",
+		"tnfa" : "pf 6/5/2018 12:33",
+		"tnfa:" : "pf 6/5/2018 12:34" } }

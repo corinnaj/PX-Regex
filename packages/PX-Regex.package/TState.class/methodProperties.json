@@ -2,5 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"isMatch" : "pf 5/14/2018 17:03",
-		"patch:" : "pf 5/14/2018 15:31" } }
+		"isAlternation" : "pf 6/6/2018 12:15",
+		"isMatch" : "pf 6/6/2018 11:50",
+		"isNull" : "pf 6/6/2018 12:06",
+		"patch:" : "pf 5/14/2018 15:31",
+		"trigger" : "pf 6/6/2018 11:28" } }
