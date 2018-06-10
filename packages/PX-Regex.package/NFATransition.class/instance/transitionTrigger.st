@@ -1,3 +1,0 @@
-accessing
-transitionTrigger
-	^ transitionTrigger
