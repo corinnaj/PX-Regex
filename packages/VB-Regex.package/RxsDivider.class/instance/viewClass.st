@@ -1,0 +1,4 @@
+PX
+viewClass
+
+	^ RegexViewDivider

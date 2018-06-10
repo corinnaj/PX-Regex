@@ -9,7 +9,8 @@
 		"part",
 		"hovered",
 		"builder",
-		"range" ],
+		"range",
+		"row" ],
 	"name" : "RegexViewPart",
 	"pools" : [
 		 ],

@@ -1,4 +1,4 @@
-accessing
+PX
 describe 
 
 	^ self character asString

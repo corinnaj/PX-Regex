@@ -1,0 +1,14 @@
+{
+	"category" : "VB-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "RxsOr",
+	"pools" : [
+		 ],
+	"super" : "RxsNode",
+	"type" : "normal" }
