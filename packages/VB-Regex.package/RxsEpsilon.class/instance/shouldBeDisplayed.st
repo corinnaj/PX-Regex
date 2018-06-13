@@ -1,4 +1,4 @@
-testing
+PX
 shouldBeDisplayed
 
 	^ false

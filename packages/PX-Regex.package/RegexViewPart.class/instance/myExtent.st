@@ -1,0 +1,4 @@
+accessing
+myExtent 
+
+	^ self extent

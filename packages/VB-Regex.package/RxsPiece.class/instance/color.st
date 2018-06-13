@@ -1,4 +1,4 @@
-accessing
+PX
 color
 
 	^ self atom color

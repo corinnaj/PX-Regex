@@ -1,0 +1,14 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"opening" ],
+	"name" : "RegexViewDivider",
+	"pools" : [
+		 ],
+	"super" : "RegexViewPart",
+	"type" : "normal" }

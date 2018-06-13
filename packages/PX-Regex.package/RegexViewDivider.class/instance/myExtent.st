@@ -1,0 +1,17 @@
+as yet unclassified
+myExtent
+
+	| endRow startRow width |
+	
+	startRow := self row.
+	endRow := self row.
+	width := 0.
+
+	builder submorphsBehind: self do: [:c |
+		c isDivider ifTrue: [
+			Transcript show: width; cr.
+			^ width @ (endRow - startRow + 1 * c sizeY)].
+		width := width + c extent x.
+		endRow := startRow max: c row].
+	
+	^ 0 asPoint

@@ -1,0 +1,4 @@
+accessing
+displayExtent 
+
+	^ self extent

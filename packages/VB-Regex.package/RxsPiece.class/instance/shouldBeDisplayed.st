@@ -1,4 +1,4 @@
-accessing
+PX
 shouldBeDisplayed
 
 	^ self atom shouldBeDisplayed
