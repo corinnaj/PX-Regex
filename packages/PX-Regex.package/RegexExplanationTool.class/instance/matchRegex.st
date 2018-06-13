@@ -1,12 +1,16 @@
 as yet unclassified
 matchRegex
 
+	self displayExplanation: ''.
+
 	[container
 		removeAllMorphs;
 		add: (RegexViewBuilder new
 			forRegex: regex text;
 			position: container position;
-			when: #displayExplanation send: #displayExplanation: to: self)] on: Error do: [:e | e return: false].
+			when: #displayExplanation send: #displayExplanation: to: self)] on: Error do: [:e |
+				self displayExplanation: self invalidRegexText.
+				e return: false].
 	
 	(self submorphs allButFirst: 4) do: [:row |
 		([row firstSubmorph text matchesRegex: regex text] on: Error do: [:e | e return: false])
