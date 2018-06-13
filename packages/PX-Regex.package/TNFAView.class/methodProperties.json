@@ -2,9 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"cellExtent" : "pf 6/13/2018 11:40",
 		"initialExtent" : "pf 6/6/2018 12:33",
-		"initialize" : "pf 6/5/2018 12:30",
+		"initialize" : "pf 6/13/2018 11:50",
 		"put:into:" : "pf 6/6/2018 12:40",
-		"show:" : "pf 6/6/2018 12:38",
+		"show:" : "pf 6/13/2018 12:48",
+		"stateExtent" : "pf 6/13/2018 11:02",
 		"tnfa" : "pf 6/5/2018 12:33",
-		"tnfa:" : "pf 6/5/2018 12:34" } }
+		"tnfa:" : "pf 6/5/2018 12:34",
+		"transitionLength" : "pf 6/13/2018 11:08" } }

@@ -3,7 +3,6 @@ initialize
 
 	super initialize.
 	
-	self
-		withLayout;
-		vertical: true;
-		extent: self initialExtent
+	self 
+		ignoreLayout: true;
+		extent: self initialExtent.
