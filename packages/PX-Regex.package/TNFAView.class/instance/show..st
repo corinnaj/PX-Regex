@@ -22,7 +22,7 @@ show: aTNFA
 		stateRow do: [ :state |
 			(state outs collect: [ :statePointer | statePointer state]) do: [ :targetState |
 				from := stateToPosition at: state.
-				to := stateToPosition at: targetState.
+				to := targetState isMatch ifTrue: [from + (self transitionLength + self stateExtent x@0)] ifFalse: [stateToPosition at: targetState].
 				(from - to) y = 0 ifTrue: [ "arrow stays in this row"
 					from := from + (self stateExtent x@(self stateExtent y / 2)).
 					to := to + (0@(self stateExtent y / 2)).
