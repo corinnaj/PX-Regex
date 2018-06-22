@@ -1,40 +1,61 @@
 as yet unclassified
 show: aTNFA
-	| stateRows stateCircle nextPosition stateToPosition transitionArrow from to |
+	| stateRows stateCircle stateToPosition transitionArrow from to direction vertices |
 	tnfa := aTNFA.
 	
 	self removeAllMorphs.
 	
 	stateRows := { {} asOrderedCollection } asOrderedCollection.
-	self put: tnfa initialState into: stateRows.
-		
-	nextPosition := 0@0.
 	stateToPosition := Dictionary new.
+	self put: tnfa initialState into: stateRows positionDict: stateToPosition.
+	
 	stateRows do: [ :stateRow | 
 		stateRow do: [ :state |
-			stateCircle := CircleMorph new position: nextPosition; extent: self stateExtent; color: Color white.
+			stateCircle := CircleMorph new position: (stateToPosition at: state); extent: self stateExtent; color: Color white.
 			state isMatch ifTrue: [stateCircle addMorph: (CircleMorph new extent: 0.8 * self stateExtent; center: stateCircle center; color: Color white)].
-			stateToPosition at: state put: nextPosition.
-			nextPosition := (self stateExtent x + self transitionLength)@0 + nextPosition.
-			self addMorph: stateCircle.].
-		nextPosition := 0@(self cellExtent y + nextPosition y)].
+			self addMorph: stateCircle.
+		].
+	].
+	
 	stateRows do: [ :stateRow | 
 		stateRow do: [ :state |
 			(state outs collect: [ :statePointer | statePointer state]) do: [ :targetState |
 				from := stateToPosition at: state.
-				to := targetState isMatch ifTrue: [from + (self transitionLength + self stateExtent x@0)] ifFalse: [stateToPosition at: targetState].
-				(from - to) y = 0 ifTrue: [ "arrow stays in this row"
-					from := from + (self stateExtent x@(self stateExtent y / 2)).
-					to := to + (0@(self stateExtent y / 2)).
+				"to := targetState isMatch ifTrue: [from + (self transitionLength + self stateExtent x@0)] ifFalse: [stateToPosition at: targetState]."
+				to := stateToPosition at: targetState.
+				direction := to - from.
+				direction y = 0 ifTrue: [ "arrow stays in this row"
+					direction x < 0 ifTrue: [
+						from := from + (self stateExtent x / 2@0).
+						to := to + (self stateExtent x / 2@0).
+					] ifFalse: [
+						direction x > (self transitionLength + self stateExtent x) ifTrue: [
+							from := from + (self stateExtent x / 2@self stateExtent y).
+							to := to + (self stateExtent x / 2@self stateExtent y).
+						] ifFalse: [
+							from := from + (self stateExtent x@(self stateExtent y / 2)).
+							to := to + (0@(self stateExtent y / 2)).
+						].						
+					].
 				] ifFalse: [
-					from := from + ((self stateExtent x / 2)@(self stateExtent y)).
-					to := to + ((self stateExtent x / 2)@0).
+					direction y < 0 ifTrue: [
+						from := from + ((self stateExtent x / 2)@0).
+						to := to + ((self stateExtent x / 2)@(self stateExtent y)).
+					] ifFalse: [
+						from := from + ((self stateExtent x / 2)@(self stateExtent y)).
+						to := to + ((self stateExtent x / 2)@0).
+					].
 				].
+				vertices := { from . to }.
+				
+				((direction x > (self transitionLength + self stateExtent x) or: [direction x < 0]) and: [direction y = 0]) ifTrue: [vertices := { from . direction / 2 + from + (0@(direction x * 0.4)) . to}].
 				transitionArrow := PolygonMorph new 
-					vertices: {from . to} 
+					vertices: vertices
 					color: nil borderWidth: 2 borderColor: Color black; 
-					beSmoothCurve; makeOpen; makeForwardArrow.
-				transitionArrow addMorph: ((StringMorph contents: state trigger asString) position: transitionArrow center + (5@5)).
+					beSmoothCurve;
+					makeOpen; 
+					makeForwardArrow.
+				transitionArrow addMorph: ((StringMorph contents: state trigger asString) position: transitionArrow center x + 5@transitionArrow center y).
 				self addMorph: transitionArrow.
 			].
 		].
