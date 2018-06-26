@@ -1,0 +1,21 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"strings",
+		"matches",
+		"matchesNot",
+		"matchesArea",
+		"notMatchesArea",
+		"matchesNotArea",
+		"regexArea",
+		"explanation" ],
+	"name" : "RegexQuizPage",
+	"pools" : [
+		 ],
+	"super" : "PHPage",
+	"type" : "normal" }

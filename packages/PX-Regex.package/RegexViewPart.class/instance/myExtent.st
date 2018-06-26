@@ -1,4 +1,4 @@
-accessing
+constants
 myExtent 
 
 	^ self extent

@@ -1,4 +1,4 @@
 PX
 explanation 
 
-	^ 'Match the charachter "', self character, '"'
+	^ 'Match the character "', self character, '"'

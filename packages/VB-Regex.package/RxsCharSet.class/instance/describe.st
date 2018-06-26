@@ -2,8 +2,8 @@ PX
 describe 
 
 	| string |
-	string := '['.
+	string := ''.
 
 	elements do: [:e | string := string, e describe ].
 	
-	^ string, ']'
+	^ string

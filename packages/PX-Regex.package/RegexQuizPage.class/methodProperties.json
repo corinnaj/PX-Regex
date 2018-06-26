@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"checkRegex" : "lcj 6/24/2018 23:17",
+		"initialize" : "lcj 6/25/2018 20:51",
+		"matches:" : "lcj 6/24/2018 22:51",
+		"matchesNot:" : "lcj 6/24/2018 22:53",
+		"toggleExplainRegex" : "lcj 6/25/2018 20:05",
+		"updateExplanation" : "lcj 6/25/2018 20:51" } }

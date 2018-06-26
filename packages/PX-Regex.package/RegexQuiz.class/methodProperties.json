@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"example" : "lcj 6/24/2018 17:09",
+		"exampleFindRegex" : "lcj 6/25/2018 16:20" },
+	"instance" : {
+		"addHelpButtons" : "lcj 6/24/2018 15:56",
+		"addQuestion" : "lcj 6/24/2018 16:04",
+		"initialize" : "lcj 6/25/2018 17:52",
+		"pages:" : "lcj 6/24/2018 16:04",
+		"showHelp:" : "lcj 6/24/2018 16:10" } }

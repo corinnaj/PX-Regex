@@ -1,4 +1,4 @@
-as yet unclassified
+initialize-release
 initialize
 
 	super initialize.
@@ -6,6 +6,7 @@ initialize
 	self
 		withLayout;
 		vertical: true;
-		extent: 600 @ 150;
+		expand: true;
+		align: #(fill fill);
 		add: (container := PHMorphContainer new);
 		add: (explanationLabel := PHLabel new)

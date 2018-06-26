@@ -1,4 +1,4 @@
 as yet unclassified
 openForRegex: aRegexString
 
-	self new forRegex: aRegexString; openInWindowLabeled: 'RegexViewer'
+	self new forRegex: aRegexString; openInHand
