@@ -2,4 +2,4 @@ testing
 sourceRange: anInterval
 
 	
-	Transcript show: anInterval
+	"Transcript show: anInterval"

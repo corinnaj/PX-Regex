@@ -1,0 +1,3 @@
+private
+transitionLength
+	^80
