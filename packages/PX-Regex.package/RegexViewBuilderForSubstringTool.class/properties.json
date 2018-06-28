@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"regex",
-		"textToMatch",
-		"matchArea",
-		"regexViewRow",
-		"regexView" ],
-	"name" : "SubstringTool",
+		 ],
+	"name" : "RegexViewBuilderForSubstringTool",
 	"pools" : [
 		 ],
-	"super" : "PHTool",
+	"super" : "RegexViewBuilder",
 	"type" : "normal" }
