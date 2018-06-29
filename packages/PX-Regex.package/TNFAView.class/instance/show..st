@@ -55,7 +55,7 @@ show: aTNFA
 					beSmoothCurve;
 					makeOpen; 
 					makeForwardArrow.
-				transitionArrow addMorph: ((StringMorph contents: state trigger asString) position: transitionArrow center x + 5@transitionArrow center y).
+				transitionArrow addMorph: ((StringMorph contents: state triggerLabel) position: transitionArrow center x + 5@transitionArrow center y).
 				self addMorph: transitionArrow.
 			].
 		].
