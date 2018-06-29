@@ -6,10 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"view",
-		"container",
-		"explanationLabel" ],
-	"name" : "RegexExplanationTool",
+		"regex",
+		"textToMatch",
+		"matchArea",
+		"regexViewRow",
+		"regexView" ],
+	"name" : "SubstringTool",
 	"pools" : [
 		 ],
 	"super" : "PHTool",

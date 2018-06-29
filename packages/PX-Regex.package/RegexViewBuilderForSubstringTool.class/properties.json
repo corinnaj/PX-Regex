@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"view",
-		"container",
-		"explanationLabel" ],
-	"name" : "RegexExplanationTool",
+		 ],
+	"name" : "RegexViewBuilderForSubstringTool",
 	"pools" : [
 		 ],
-	"super" : "PHTool",
+	"super" : "RegexViewBuilder",
 	"type" : "normal" }
