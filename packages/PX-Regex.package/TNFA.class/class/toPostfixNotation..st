@@ -1,24 +1,39 @@
 private
 toPostfixNotation: pattern
-	| postfixPattern currentGroup parenthesisStack numAlternatives numAtoms numAtomsInBrackets inBrackets |
+	| postfixPattern currentGroup parenthesisStack numAlternatives numAtoms numAtomsInBrackets inBrackets fillingCharacterRange characterRangeStart characterRange |
 	numAlternatives := 0.
 	numAtoms := 0.
 	numAtomsInBrackets := 0.
 	inBrackets := false. "e.g. [abc]"
+	fillingCharacterRange := false. "e.g. [a-g]"
+	characterRangeStart := $a.
 	
 	postfixPattern := AttributedTextStream new.
 	parenthesisStack := Stack new.
 	
 	pattern do: [ :aCharacter | 
 		inBrackets ifTrue: [
-			aCharacter = $] ifTrue: [
-				postfixPattern nextPutAll: (String new: numAtomsInBrackets-1 withAll: $]).
-				inBrackets := false.
-				numAtomsInBrackets := 0.
-				numAtoms := numAtoms + 1.
-			] ifFalse: [
-				numAtomsInBrackets := numAtomsInBrackets + 1.
-				postfixPattern nextPut: aCharacter.
+			aCharacter caseOf: {
+				[$]] -> [
+					postfixPattern nextPutAll: (String new: numAtomsInBrackets-1 withAll: $]).
+					inBrackets := false.
+					numAtomsInBrackets := 0.
+					numAtoms := numAtoms + 1.
+				].
+				[$-] -> [
+					fillingCharacterRange := true.
+				].
+			} otherwise: [
+				fillingCharacterRange ifTrue: [
+					fillingCharacterRange := false.
+					characterRange :=  ((characterRangeStart asInteger + 1) asCharacter to: aCharacter).
+					numAtomsInBrackets := numAtomsInBrackets + characterRange size.
+					postfixPattern nextPutAll: characterRange.
+				] ifFalse: [
+					numAtomsInBrackets := numAtomsInBrackets + 1.
+					postfixPattern nextPut: aCharacter.	
+					characterRangeStart := aCharacter.
+				]
 			].
 		] ifFalse: [
 			aCharacter caseOf: {
