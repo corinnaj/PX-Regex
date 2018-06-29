@@ -1,4 +1,4 @@
 as yet unclassified
 displayExplanation: aString
 
-	explanationLabel text: aString
+	explanationLabel markup: aString

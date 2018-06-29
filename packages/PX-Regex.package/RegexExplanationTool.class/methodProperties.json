@@ -1,8 +1,10 @@
 {
 	"class" : {
-		"openWithText:" : "lcj 6/26/2018 11:20" },
+		"openWithText:" : "lcj 6/26/2018 18:40",
+		"openWithText:andPossibilites:" : "lcj 6/26/2018 13:31" },
 	"instance" : {
-		"displayExplanation:" : "lcj 5/13/2018 21:56",
+		"addPossibilities:" : "lcj 6/26/2018 12:33",
+		"displayExplanation:" : "lcj 6/26/2018 11:54",
 		"initialize" : "lcj 6/24/2018 16:15",
 		"invalidRegexText" : "lcj 6/13/2018 11:04",
 		"matchRegex" : "lcj 6/24/2018 16:16",
