@@ -1,8 +1,8 @@
 {
 	"class" : {
 		"forRegex:" : "pf 5/30/2018 12:57",
-		"toPostfixNotation:" : "pf 6/29/2018 13:34" },
+		"toPostfixNotation:" : "pf 6/29/2018 17:21" },
 	"instance" : {
-		"forPostfixRegex:" : "pf 6/29/2018 12:46",
+		"forPostfixRegex:" : "pf 6/29/2018 17:26",
 		"initialState" : "pf 6/6/2018 11:11",
-		"matches:" : "pf 6/29/2018 12:10" } }
+		"matches:" : "pf 6/29/2018 17:17" } }

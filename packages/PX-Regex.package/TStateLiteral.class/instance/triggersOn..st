@@ -1,3 +1,3 @@
 accessing
 triggersOn: aCharacter
-	^(self trigger like: aCharacter) notNil
+	^self isNegated = ((self trigger like: aCharacter) isNil)

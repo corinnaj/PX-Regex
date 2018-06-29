@@ -2,11 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "pf 5/14/2018 15:25",
+		"initialize" : "pf 6/29/2018 17:07",
+		"isNegated" : "pf 6/29/2018 17:07",
+		"isNegated:" : "pf 6/29/2018 17:07",
 		"out:" : "pf 5/14/2018 17:34",
 		"outs" : "pf 5/14/2018 16:33",
 		"trigger" : "pf 5/14/2018 14:56",
 		"trigger:" : "pf 5/14/2018 14:56",
-		"triggerLabel" : "pf 6/29/2018 11:54",
-		"triggerLabel:" : "pf 6/29/2018 11:54",
-		"triggersOn:" : "pf 6/29/2018 12:03" } }
+		"triggerLabel" : "pf 6/29/2018 18:34",
+		"triggersOn:" : "pf 6/29/2018 17:13" } }

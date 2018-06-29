@@ -1,6 +1,6 @@
 private
 forPostfixRegex: postfixPattern
-	"all characters are taken literally except: . (concatenation), | (alternation), ? (optional), * (at least 0 repetitions), + (at least 1 repetition)"
+	"all characters are taken literally except: . (concatenation), | (alternation), ? (optional), * (at least 0 repetitions), + (at least 1 repetition), ] (like concatination for alternative groups []), ^ (negating [])"
 	"expects postfix notation: 'ab.c|' instead of 'ab|c' and 'ab.a?.*' instead of '(aba?)*'"
 	| stack fragment fragment2 state triggerSet |
 	stack := Stack new.
@@ -57,16 +57,18 @@ forPostfixRegex: postfixPattern
 					addAll: fragment2 start trigger; 
 					yourself.
 				state := TStateLiteral new 
-					trigger: triggerSet; 
-					triggerLabel: fragment start triggerLabel , fragment2 start triggerLabel; 
+					trigger: triggerSet;
 					yourself.
 				stack push: (TFragment new 
 					start: state; 
 					outs: state outs; 
 					yourself).
 			].
+			[$^] -> [
+				stack top start isNegated: true.
+			].
 		} otherwise: [
-			state := TStateLiteral new trigger: (Set new add: character; yourself); triggerLabel: character asString; yourself.
+			state := TStateLiteral new trigger: (Set new add: character; yourself); yourself.
 			stack push: (TFragment new start: state; outs: state outs; yourself).
 		].
 	].

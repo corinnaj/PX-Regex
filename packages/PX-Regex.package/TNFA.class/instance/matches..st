@@ -12,7 +12,7 @@ matches: aString
 				
 	nextStates := {} asOrderedCollection.
 	aString do: [ :character |
-		currentStates do: [ :state | 
+		currentStates do: [ :state |
 			(state triggersOn: character) ifTrue: [
 				nextState := state outs first state.
 				[nextState isKindOf: TStateSplit] whileTrue: [

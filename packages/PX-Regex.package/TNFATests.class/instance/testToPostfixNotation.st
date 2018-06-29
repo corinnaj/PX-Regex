@@ -5,4 +5,5 @@ testToPostfixNotation
 	(self expect: (TNFA toPostfixNotation: '[a]')) to equal: 'a'.
 	(self expect: (TNFA toPostfixNotation: '[ab]')) to equal: 'ab]'.
 	(self expect: (TNFA toPostfixNotation: '[abg]')) to equal: 'abg]]'.
-	"(self expect: (TNFA toPostfixNotation: '[a-z]')) to equal: 'az['."
+	(self expect: (TNFA toPostfixNotation: '[^abg]')) to equal: 'abg]]^'.
+	(self expect: (TNFA toPostfixNotation: '[^a]')) to equal: 'a^'.

@@ -1,10 +1,11 @@
 private
 toPostfixNotation: pattern
-	| postfixPattern currentGroup parenthesisStack numAlternatives numAtoms numAtomsInBrackets inBrackets fillingCharacterRange characterRangeStart characterRange |
+	| postfixPattern currentGroup parenthesisStack numAlternatives numAtoms numAtomsInBrackets inBrackets fillingCharacterRange characterRangeStart characterRange negatedBrackets |
 	numAlternatives := 0.
 	numAtoms := 0.
 	numAtomsInBrackets := 0.
 	inBrackets := false. "e.g. [abc]"
+	negatedBrackets := false. "will be set to true for eg. [^a-d]"
 	fillingCharacterRange := false. "e.g. [a-g]"
 	characterRangeStart := $a.
 	
@@ -16,7 +17,11 @@ toPostfixNotation: pattern
 			aCharacter caseOf: {
 				[$]] -> [
 					postfixPattern nextPutAll: (String new: numAtomsInBrackets-1 withAll: $]).
+					negatedBrackets ifTrue: [
+						postfixPattern nextPut: $^.
+					].					
 					inBrackets := false.
+					negatedBrackets := false.
 					numAtomsInBrackets := 0.
 					numAtoms := numAtoms + 1.
 				].
@@ -30,9 +35,13 @@ toPostfixNotation: pattern
 					numAtomsInBrackets := numAtomsInBrackets + characterRange size.
 					postfixPattern nextPutAll: characterRange.
 				] ifFalse: [
-					numAtomsInBrackets := numAtomsInBrackets + 1.
-					postfixPattern nextPut: aCharacter.	
-					characterRangeStart := aCharacter.
+					(aCharacter = $^ and: [numAtomsInBrackets = 0]) ifTrue: [
+						negatedBrackets := true.
+					] ifFalse: [
+						numAtomsInBrackets := numAtomsInBrackets + 1.
+						postfixPattern nextPut: aCharacter.	
+						characterRangeStart := aCharacter.
+					]
 				]
 			].
 		] ifFalse: [
