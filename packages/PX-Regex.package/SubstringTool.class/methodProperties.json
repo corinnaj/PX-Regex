@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"buildView" : "KB 6/28/2018 12:11",
+		"buildView" : "KB 6/29/2018 09:16",
 		"highlightMatches" : "KB 6/28/2018 12:00",
 		"highlightSubExpression:" : "KB 6/26/2018 19:15",
-		"initialize" : "KB 6/28/2018 12:07",
-		"matchRegex" : "KB 6/28/2018 12:04" } }
+		"initialize" : "KB 6/29/2018 09:14",
+		"matchRegex" : "KB 6/29/2018 09:20",
+		"subexpressionsFrom:for:" : "KB 6/29/2018 09:31" } }
