@@ -2,8 +2,7 @@ accessing
 triggerLabel
 	| label sortedTriggers rangeStart previous finishRange |
 	label := AttributedTextStream new.
-	label nextPut: $[.
-	self isNegated ifTrue: [label nextPut: $^].
+	self isNegated ifTrue: [label nextPutAll: '[^'] ifFalse: [self trigger size > 1 ifTrue: [label nextPut: $[]].
 	sortedTriggers := self trigger asOrderedCollection.
 	sortedTriggers sort.
 	rangeStart := nil.
@@ -27,5 +26,5 @@ triggerLabel
 	
 	finishRange value.
 	
-	label nextPut: $].
+	(self isNegated or: [self trigger size > 1]) ifTrue: [label nextPut: $]].
 	^label contents asString

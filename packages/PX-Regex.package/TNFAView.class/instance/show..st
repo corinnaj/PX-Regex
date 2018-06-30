@@ -1,6 +1,6 @@
 as yet unclassified
 show: aTNFA
-	| stateRows stateCircle stateToPosition transitionArrow from to direction vertices |
+	| stateRows stateCircle stateToPosition transitionArrow from to direction vertices label |
 	tnfa := aTNFA.
 	
 	self removeAllMorphs.
@@ -21,7 +21,6 @@ show: aTNFA
 		stateRow do: [ :state |
 			(state outs collect: [ :statePointer | statePointer state]) do: [ :targetState |
 				from := stateToPosition at: state.
-				"to := targetState isMatch ifTrue: [from + (self transitionLength + self stateExtent x@0)] ifFalse: [stateToPosition at: targetState]."
 				to := stateToPosition at: targetState.
 				direction := to - from.
 				direction y = 0 ifTrue: [ "arrow stays in this row"
@@ -55,7 +54,10 @@ show: aTNFA
 					beSmoothCurve;
 					makeOpen; 
 					makeForwardArrow.
-				transitionArrow addMorph: ((StringMorph contents: state triggerLabel) position: transitionArrow center x + 5@transitionArrow center y).
+				
+				label := StringMorph contents: state triggerLabel.
+				label center: transitionArrow center x @ (transitionArrow top - label fontToUse pointSize).
+				transitionArrow addMorph: label.
 				self addMorph: transitionArrow.
 			].
 		].
