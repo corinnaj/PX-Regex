@@ -19,7 +19,7 @@ show: aTNFA
 	
 	stateRows do: [ :stateRow | 
 		stateRow do: [ :state |
-			(state outs collect: [ :statePointer | statePointer state]) do: [ :targetState |
+			(state outs collect: [ :statePointer | statePointer state]) do: [ :targetState | | label |
 				transitionArrow := PolygonMorph new 
 					vertices: (self
 						getArrowFrom: (stateToPosition at: state)
@@ -28,9 +28,12 @@ show: aTNFA
 					beSmoothCurve;
 					makeOpen; 
 					makeForwardArrow.
-				transitionArrow
-					addMorph: ((StringMorph contents: state trigger asString)
-					position: transitionArrow center x + 5 @ transitionArrow center y).
+					
+				label := StringMorph contents: state triggerLabel.
+				label center: transitionArrow center x
+					@ (transitionArrow top - label fontToUse pointSize).
+				transitionArrow addMorph: label.
+				
 				self addMorph: transitionArrow.
 			].
 		].

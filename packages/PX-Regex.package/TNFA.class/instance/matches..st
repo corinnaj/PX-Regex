@@ -12,8 +12,8 @@ matches: aString
 				
 	nextStates := {} asOrderedCollection.
 	aString do: [ :character |
-		currentStates do: [ :state | 
-			((state isKindOf: TStateLiteral) and: [state trigger == character]) ifTrue: [
+		currentStates do: [ :state |
+			(state triggersOn: character) ifTrue: [
 				nextState := state outs first state.
 				[nextState isKindOf: TStateSplit] whileTrue: [
 					nextStates add: nextState outs first state.
@@ -22,7 +22,6 @@ matches: aString
 				 nextStates add: nextState.
 			].
 		].
-		
 	
 		currentStates := nextStates.
 		nextStates := {} asOrderedCollection.
