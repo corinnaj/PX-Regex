@@ -20,3 +20,6 @@ testMatches
 	(self expect: ((TNFA forRegex: '[^a]') matches: 'd')) to equal: true.
 	(self expect: ((TNFA forRegex: '[^a-e]') matches: 'e')) to equal: false.
 	(self expect: ((TNFA forRegex: '[^a-e]') matches: '4')) to equal: true.
+	
+	(self expect: ((TNFA forRegex: '.....') matches: '48a#¿')) to equal: true.
+	(self expect: ((TNFA forRegex: '.....') matches: '4' , Character cr asString , 'a#¿')) to equal: false.

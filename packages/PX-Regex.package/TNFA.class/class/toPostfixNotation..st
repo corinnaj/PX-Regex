@@ -90,6 +90,16 @@ toPostfixNotation: pattern
 				[$[] -> [
 					inBrackets := true.
 				].
+				[$.] -> [
+					numAtoms > 1 ifTrue: [
+						numAtoms := numAtoms - 1.
+						postfixPattern nextPut: $..
+					].
+					postfixPattern nextPut: Character cr.
+					postfixPattern nextPut: Character lf.
+					postfixPattern nextPutAll: ']^'.
+					numAtoms := numAtoms + 1.
+				].
 			} otherwise: [
 				numAtoms > 1 ifTrue: [
 					numAtoms := numAtoms - 1.
