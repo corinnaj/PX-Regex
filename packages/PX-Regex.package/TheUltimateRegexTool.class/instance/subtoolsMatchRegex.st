@@ -1,11 +1,12 @@
 as yet unclassified
 subtoolsMatchRegex
 
-	substringTextArea matchRegex.
-	explanationView container removeAllMorphs.
-	explanationView forRegex: self regex.
+	[
+		substringTextArea matchRegex.
+		explanationView container removeAllMorphs.
+		explanationView forRegex: self regex.
 	
-	self regex ifNotEmpty: [
 		self matchTestlines.
 		nfaView show: (TNFA forRegex: self regex).
-		nfaView position: nfaContainer position]
+		nfaView position: nfaContainer position
+	] on: Error do: [#()]
