@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"regexEntry",
-		"stringEntry" ],
-	"name" : "PHRegexExample",
+		"tool" ],
+	"name" : "PHSubstringTextArea",
 	"pools" : [
 		 ],
-	"super" : "PHExample",
+	"super" : "PHHoverableTextArea",
 	"type" : "normal" }

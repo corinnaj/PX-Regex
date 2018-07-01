@@ -2,6 +2,8 @@ layout
 resizeToFit 
 
 	| first |
+	self submorphs ifEmpty: [^ self].
+
 	first := self submorphs first.
 	first extent: first myExtent.
 	first position: 0 @ first row * first sizeY.

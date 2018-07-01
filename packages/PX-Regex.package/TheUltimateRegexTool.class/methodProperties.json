@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addTestLine" : "lcj 6/29/2018 19:56",
+		"initialExtent" : "lcj 6/30/2018 10:02",
+		"initialize" : "lcj 7/1/2018 12:05",
+		"initializeLeftColumn" : "lcj 6/30/2018 09:55",
+		"initializeRightColumn" : "lcj 7/1/2018 12:02",
+		"matchTestlines" : "lcj 6/29/2018 19:44",
+		"regex" : "lcj 6/29/2018 11:55",
+		"subtoolsMatchRegex" : "lcj 6/29/2018 21:00",
+		"toggleFullNFA" : "lcj 7/1/2018 12:05" } }

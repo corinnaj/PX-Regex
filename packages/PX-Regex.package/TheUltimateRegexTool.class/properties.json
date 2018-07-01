@@ -1,0 +1,24 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"leftColumn",
+		"rightColumn",
+		"regexArea",
+		"substringTextArea",
+		"explanationView",
+		"nfaView",
+		"testlines",
+		"testlineArea",
+		"nfaContainer",
+		"nfaScrollArea",
+		"fullPage" ],
+	"name" : "TheUltimateRegexTool",
+	"pools" : [
+		 ],
+	"super" : "PHTool",
+	"type" : "normal" }

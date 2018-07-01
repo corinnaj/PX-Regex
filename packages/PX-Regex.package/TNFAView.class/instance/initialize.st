@@ -3,6 +3,6 @@ initialize
 
 	super initialize.
 	
-	self 
-		ignoreLayout: true;
+	self
+		color: Color transparent;
 		extent: self initialExtent.

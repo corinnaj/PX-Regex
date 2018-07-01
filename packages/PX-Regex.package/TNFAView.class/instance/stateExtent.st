@@ -1,3 +1,4 @@
 private
 stateExtent
-	^50@50
+	
+	^ 50 asPoint

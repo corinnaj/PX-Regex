@@ -2,12 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
+		"calculatePositionFor:" : "lcj 6/29/2018 21:38",
 		"cellExtent" : "pf 6/13/2018 11:40",
-		"initialExtent" : "pf 6/18/2018 11:50",
-		"initialize" : "pf 6/13/2018 11:50",
-		"put:into:positionDict:" : "pf 6/22/2018 14:44",
-		"show:" : "pf 6/22/2018 14:47",
-		"stateExtent" : "pf 6/13/2018 11:02",
+		"getArrowFrom:to:" : "lcj 6/29/2018 22:11",
+		"initialExtent" : "lcj 6/29/2018 21:39",
+		"initialize" : "lcj 6/29/2018 21:40",
+		"offset" : "lcj 6/29/2018 21:37",
+		"put:into:positionDict:" : "lcj 6/29/2018 21:33",
+		"show:" : "lcj 6/29/2018 22:03",
+		"stateExtent" : "lcj 6/29/2018 21:39",
 		"tnfa" : "pf 6/5/2018 12:33",
 		"tnfa:" : "pf 6/5/2018 12:34",
 		"transitionLength" : "pf 6/13/2018 11:08" } }

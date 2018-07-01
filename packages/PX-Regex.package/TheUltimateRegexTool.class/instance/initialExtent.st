@@ -1,4 +1,4 @@
 as yet unclassified
 initialExtent
 
-	^ (300 @ 300) withScalingFactor
+	^ 1500 @ 850
