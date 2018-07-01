@@ -3,7 +3,7 @@ add: aBranchOrRegex at: aPoint from: anotherPoint
 
 	| x |
 	
-	self addMorphBack: (RegexPart new
+	self addMorphBack: (RegexTreePart new
 		part: aBranchOrRegex;
 		center: aPoint;
 		color: Color white;
