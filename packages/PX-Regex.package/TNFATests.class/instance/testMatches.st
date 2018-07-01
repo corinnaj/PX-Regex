@@ -23,3 +23,7 @@ testMatches
 	
 	(self expect: ((TNFA forRegex: '.....') matches: '48a#¿')) to equal: true.
 	(self expect: ((TNFA forRegex: '.....') matches: '4' , Character cr asString , 'a#¿')) to equal: false.
+
+	(self expect: ((TNFA forRegex: '\[') matches: '[')) to equal: true.
+	(self expect: ((TNFA forRegex: '\[') matches: '\[')) to equal: false.
+		

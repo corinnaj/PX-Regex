@@ -3,11 +3,12 @@
 		 },
 	"instance" : {
 		"initialize" : "pf 6/29/2018 17:07",
+		"isBackslash" : "pf 7/1/2018 14:13",
 		"isNegated" : "pf 6/29/2018 17:07",
 		"isNegated:" : "pf 6/29/2018 17:07",
 		"out:" : "pf 5/14/2018 17:34",
 		"outs" : "pf 5/14/2018 16:33",
 		"trigger" : "pf 5/14/2018 14:56",
 		"trigger:" : "pf 5/14/2018 14:56",
-		"triggerLabel" : "pf 6/30/2018 14:52",
+		"triggerLabel" : "pf 7/1/2018 21:17",
 		"triggersOn:" : "pf 6/29/2018 17:13" } }

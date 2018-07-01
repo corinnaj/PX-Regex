@@ -7,3 +7,5 @@ testToPostfixNotation
 	(self expect: (TNFA toPostfixNotation: '[abg]')) to equal: 'abg]]'.
 	(self expect: (TNFA toPostfixNotation: '[^abg]')) to equal: 'abg]]^'.
 	(self expect: (TNFA toPostfixNotation: '[^a]')) to equal: 'a^'.
+	(self expect: (TNFA toPostfixNotation: 'a\[\^')) to equal: 'a\[.\^.'.
+	

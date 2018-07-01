@@ -8,5 +8,6 @@ subtoolsMatchRegex
 	
 		self matchTestlines.
 		nfaView show: (TNFA forRegex: self regex).
-		nfaView position: nfaContainer position
-	] on: Error do: [#()]
+		nfaView position: nfaContainer position.
+		regexArea color: Color white.
+	] on: Error do: [regexArea color: Color yellow]
