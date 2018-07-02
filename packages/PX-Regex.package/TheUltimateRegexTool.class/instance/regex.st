@@ -1,4 +1,4 @@
 as yet unclassified
 regex
 
-	^ regexArea text
+	^ regexArea text string
