@@ -9,13 +9,13 @@ show: aTNFA
 	stateRows := { {} asOrderedCollection } asOrderedCollection.
 	stateToPosition := Dictionary new.
 	stateToCircle := Dictionary new.
-	self put: tnfa initialState into: stateRows at: 1@1 positionDict: stateToPosition.
+	self put: tnfa initialState into: stateRows at: 1@2 positionDict: stateToPosition.
 	
 	"add states -> circles"
 	stateRows do: [ :stateRow | 
 		stateRow do: [ :state |
-			stateCircle := CircleMorph new position: (stateToPosition at: state); extent: self stateExtent; color: Color white.
-			state isMatch ifTrue: [stateCircle addMorph: (CircleMorph new extent: 0.8 * self stateExtent; center: stateCircle center; color: Color white)].
+			stateCircle := CircleMorph new center: (self calculateCenterFor: (stateToPosition at: state)) - (5@5); extent: self stateDiameter asPoint; color: Color white.
+			state isMatch ifTrue: [stateCircle addMorph: (CircleMorph new extent: 0.8 * self stateDiameter asPoint; center: stateCircle center; color: Color transparent)].
 			self addMorph: stateCircle.
 			stateToCircle at: state put: stateCircle.
 		].
@@ -25,18 +25,14 @@ show: aTNFA
 	stateRows do: [ :stateRow | 
 		stateRow do: [ :state |
 			(state outs collect: [ :statePointer | statePointer state]) do: [ :targetState | | label |
-				transitionArrow := PolygonMorph new 
-					vertices: (self
-						getArrowFrom: (stateToPosition at: state)
-						to: (stateToPosition at: targetState))
-					color: nil borderWidth: 2 borderColor: Color black; 
-					beSmoothCurve;
-					makeOpen; 
-					makeForwardArrow.
+				transitionArrow := self arrowFrom: (stateToPosition at: state) to: (stateToPosition at: targetState).
 					
 				label := StringMorph contents: state triggerLabel.
-				label center: transitionArrow center x
-					@ (transitionArrow top - label fontToUse pointSize).
+				transitionArrow vertices last x - transitionArrow vertices first x = 0 ifTrue: [
+					label position: transitionArrow vertices middle + (label fontToUse pointSize @ 0).
+				] ifFalse: [
+					label center: transitionArrow vertices middle - (0 @ label fontToUse pointSize).
+				].
 				transitionArrow addMorph: label.
 				
 				self addMorph: transitionArrow.
