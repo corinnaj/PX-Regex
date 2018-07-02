@@ -6,5 +6,6 @@ highlightSubExpression: anIndex
 	range
 		ifNotNil: [
 			subString :=  (self text copyFrom: range start to: anIndex) asString.
-			self tool subStringSelected: subString]
+			self tool subStringSelected: subString.
+			self tool nfaView highlightActiveStatesFor: self text At: anIndex]
 		ifNil: [self tool subStringSelected: '']
