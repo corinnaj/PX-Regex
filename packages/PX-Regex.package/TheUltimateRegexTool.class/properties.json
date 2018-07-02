@@ -16,7 +16,8 @@
 		"testlineArea",
 		"nfaContainer",
 		"nfaScrollArea",
-		"fullPage" ],
+		"fullPage",
+		"nfaStepRegex" ],
 	"name" : "TheUltimateRegexTool",
 	"pools" : [
 		 ],
