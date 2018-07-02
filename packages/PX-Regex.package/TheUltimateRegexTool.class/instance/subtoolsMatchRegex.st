@@ -10,4 +10,6 @@ subtoolsMatchRegex
 		nfaView show: (TNFA forRegex: self regex).
 		nfaView position: nfaContainer position.
 		regexArea color: Color white.
-	] on: Error do: [regexArea color: Color yellow]
+	] on: Error do: [
+		nfaView removeAllMorphs.
+		regexArea color: Color yellow]

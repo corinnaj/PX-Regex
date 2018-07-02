@@ -9,5 +9,5 @@ initialize
 		when: #changed send: #matchRegex to: self;
 		multiLine: true;
 		minRows: 5;
-		"when: #characterHovered send: #highlightSubExpression: to: self;"
+		when: #characterHovered send: #highlightSubExpression: to: self;
 		expand: true
