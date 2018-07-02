@@ -8,5 +8,5 @@ initializeLeftColumn
 		add: (explanationView := RegexExplanationView new);
 		add: (PHLabel subHeading: 'Substring Matches:');
 		add: (substringTextArea := PHSubstringTextArea newForTool: self);
-		add: (PHLabel subHeading: 'Find Out Which Wtrings Match Your Regex:');
+		add: (PHLabel subHeading: 'Find Out Which Strings Match Your Regex:');
 		add: (testlineArea := PHPage column)

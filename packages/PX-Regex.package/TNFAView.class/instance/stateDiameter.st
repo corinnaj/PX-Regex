@@ -1,0 +1,4 @@
+private
+stateDiameter
+	
+	^ 50

@@ -6,7 +6,7 @@ put: state into: rows at: gridCoordinates positionDict: stateToPosition
 		rows last add: state.
 		stateToPosition
 			at: state
-			put: (self calculatePositionFor: gridCoordinates).
+			put: gridCoordinates.
 
 		state isAlternation
 			ifTrue: [
@@ -22,7 +22,8 @@ put: state into: rows at: gridCoordinates positionDict: stateToPosition
 					at: gridCoordinates + (1@1)
 					positionDict: stateToPosition.
 			] ifFalse: [
-				state outs do: [ :statePointer | self
+				state outs do: [ :statePointer | 
+					self
 						put: statePointer state
 						into: rows
 						at: gridCoordinates + (1@0)
