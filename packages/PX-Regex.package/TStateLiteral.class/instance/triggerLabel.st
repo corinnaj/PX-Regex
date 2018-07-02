@@ -30,10 +30,4 @@ triggerLabel
 	finishRange value.
 	
 	(self isNegated or: [self trigger size > 1]) ifTrue: [label nextPut: $]].
-	^label contents collect: [:c | 
-		c caseOf: {
-			[Character cr] -> [$r].
-			[Character lf] -> ['\n'].
-			[Character tab] -> ['\t'].
-		} otherwise: [c]
-	] as: String
+	^label contents asString
