@@ -1,5 +1,6 @@
 as yet unclassified
 testMatches
+	(self expect: ((TNFA forRegex: 'ahf') matches: 'ahf')) to equal: true.
 	(self expect: ((TNFA forRegex: 'a(b|c)') matches: 'ab')) to equal: true.
 	(self expect: ((TNFA forRegex: 'a(b|c)') matches: 'abc')) to equal: false.
 	(self expect: ((TNFA forRegex: 'a(x[bc])') matches: 'axc')) to equal: true.

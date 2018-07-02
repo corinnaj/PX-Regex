@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tnfa" ],
+		"tnfa",
+		"stateToCircle",
+		"activeStates" ],
 	"name" : "TNFAView",
 	"pools" : [
 		 ],

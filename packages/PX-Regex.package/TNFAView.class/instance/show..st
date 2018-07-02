@@ -3,20 +3,25 @@ show: aTNFA
 	| stateRows stateCircle stateToPosition transitionArrow |
 	tnfa := aTNFA.
 	
+	activeStates := nil.
 	self removeAllMorphs.
 	
 	stateRows := { {} asOrderedCollection } asOrderedCollection.
 	stateToPosition := Dictionary new.
-	self put: tnfa initialState into: stateRows positionDict: stateToPosition.
+	stateToCircle := Dictionary new.
+	self put: tnfa initialState into: stateRows at: 1@1 positionDict: stateToPosition.
 	
+	"add states -> circles"
 	stateRows do: [ :stateRow | 
 		stateRow do: [ :state |
 			stateCircle := CircleMorph new position: (stateToPosition at: state); extent: self stateExtent; color: Color white.
 			state isMatch ifTrue: [stateCircle addMorph: (CircleMorph new extent: 0.8 * self stateExtent; center: stateCircle center; color: Color white)].
 			self addMorph: stateCircle.
+			stateToCircle at: state put: stateCircle.
 		].
 	].
 	
+	"add transitions -> arrows"
 	stateRows do: [ :stateRow | 
 		stateRow do: [ :state |
 			(state outs collect: [ :statePointer | statePointer state]) do: [ :targetState | | label |
@@ -39,4 +44,4 @@ show: aTNFA
 		].
 	].
 
-	self bounds: (Rectangle merging: submorphs)
+	self bounds: (Rectangle merging: submorphs).

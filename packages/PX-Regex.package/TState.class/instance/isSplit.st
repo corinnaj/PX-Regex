@@ -1,3 +1,3 @@
 as yet unclassified
-trigger
-	^Set new
+isSplit
+	^false
