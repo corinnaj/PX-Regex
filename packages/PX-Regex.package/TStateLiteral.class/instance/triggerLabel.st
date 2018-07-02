@@ -13,7 +13,7 @@ triggerLabel
 	finishRange := [
 		label nextPutAll: (rangeStart caseOf: {[Character cr] -> ['\r']. [Character lf] -> ['\n']. [Character tab] -> ['\t']} otherwise: [rangeStart asString]).
 		previous asInteger - rangeStart asInteger > 1 ifTrue: [label nextPut: $-].
-		rangeStart ~= previous ifTrue: [label nextPutAll: (rangeStart caseOf: {[Character cr] -> ['\r']. [Character lf] -> ['\n']. [Character tab] -> ['\t']} otherwise: [rangeStart asString]).].
+		rangeStart ~= previous ifTrue: [label nextPutAll: (previous caseOf: {[Character cr] -> ['\r']. [Character lf] -> ['\n']. [Character tab] -> ['\t']} otherwise: [previous asString]).].
 	]. 
 	sortedTriggers do: [:trigger | 
 		previous ifNil: [

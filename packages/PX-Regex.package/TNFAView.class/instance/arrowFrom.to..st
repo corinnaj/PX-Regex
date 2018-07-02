@@ -7,7 +7,7 @@ arrowFrom: aPoint to: anotherPoint
 	vector := to - from.
 	
 	vertices := ((vector x > self cellSize or: [vector x < 0]) and: [vector y = 0]) ifTrue: [
-		detour := vector / 2 + from + (0 @ (vector x * 0.4)).
+		detour := from + (vector / 2) + (0 @ (vector x sign * vector x abs sqrt * 4)).
 		{from + (self stateDiameter / 2 * (detour - from) normalized) . detour . to - (self stateDiameter / 2 * (to - detour) normalized)}
 	] ifFalse: [
 		{from + (self stateDiameter / 2 * vector normalized) . from + (vector / 2) . to - (self stateDiameter / 2 * vector normalized)}

@@ -28,7 +28,11 @@ show: aTNFA
 				transitionArrow := self arrowFrom: (stateToPosition at: state) to: (stateToPosition at: targetState).
 					
 				label := StringMorph contents: state triggerLabel.
-				label center: transitionArrow vertices middle - (0 @ label fontToUse pointSize).
+				transitionArrow vertices last x - transitionArrow vertices first x = 0 ifTrue: [
+					label position: transitionArrow vertices middle + (label fontToUse pointSize @ 0).
+				] ifFalse: [
+					label center: transitionArrow vertices middle - (0 @ label fontToUse pointSize).
+				].
 				transitionArrow addMorph: label.
 				
 				self addMorph: transitionArrow.
