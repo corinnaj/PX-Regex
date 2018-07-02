@@ -14,7 +14,7 @@ show: aTNFA
 	"add states -> circles"
 	stateRows do: [ :stateRow | 
 		stateRow do: [ :state |
-			stateCircle := CircleMorph new center: (self calculateCenterFor: (stateToPosition at: state)); extent: self stateDiameter asPoint; color: Color white.
+			stateCircle := CircleMorph new center: (self calculateCenterFor: (stateToPosition at: state)) - (5@5); extent: self stateDiameter asPoint; color: Color white.
 			state isMatch ifTrue: [stateCircle addMorph: (CircleMorph new extent: 0.8 * self stateDiameter asPoint; center: stateCircle center; color: Color transparent)].
 			self addMorph: stateCircle.
 			stateToCircle at: state put: stateCircle.
