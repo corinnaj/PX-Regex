@@ -9,7 +9,7 @@ show: aTNFA
 	stateRows := { {} asOrderedCollection } asOrderedCollection.
 	stateToPosition := Dictionary new.
 	stateToCircle := Dictionary new.
-	self put: tnfa initialState into: stateRows positionDict: stateToPosition.
+	self put: tnfa initialState into: stateRows at: 1@1 positionDict: stateToPosition.
 	
 	"add states -> circles"
 	stateRows do: [ :stateRow | 

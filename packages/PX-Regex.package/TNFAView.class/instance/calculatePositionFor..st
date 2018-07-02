@@ -1,6 +1,6 @@
 private
-calculatePositionFor: rows
+calculatePositionFor: gridCoordinates
 
 	^ self position + 
-		(rows last size - 1 * (self stateExtent x / 2 + self transitionLength)
-		@ (rows size - 1 * self cellExtent y + self offset)).
+		(gridCoordinates x - 1 * (self stateExtent x / 2 + self transitionLength)
+		@ (gridCoordinates y - 1 * self cellExtent y + self offset)).
