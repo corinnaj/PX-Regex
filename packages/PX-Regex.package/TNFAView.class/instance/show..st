@@ -1,6 +1,6 @@
 as yet unclassified
 show: aTNFA
-	| stateRows stateCircle stateToPosition transitionArrow |
+	| stateRows stateToPosition |
 	tnfa := aTNFA.
 	
 	activeStates := nil.
@@ -13,19 +13,21 @@ show: aTNFA
 	
 	"add states -> circles"
 	stateRows do: [ :stateRow | 
-		stateRow do: [ :state |
-			stateCircle := CircleMorph new center: (self calculateCenterFor: (stateToPosition at: state)) - (5@5); extent: self stateDiameter asPoint; color: Color white.
-			state isMatch ifTrue: [stateCircle addMorph: (CircleMorph new extent: 0.8 * self stateDiameter asPoint; center: stateCircle center; color: Color transparent)].
-			self addMorph: stateCircle.
-			stateToCircle at: state put: stateCircle.
+		stateRow do: [ :state | | stateMorph |
+			stateMorph := self addStateMorphFor: state.
+			stateMorph center: (self calculateCenterFor: (stateToPosition at: state)).
+			self addMorph: stateMorph.
+			stateToCircle at: state put: stateMorph.
 		].
 	].
 	
 	"add transitions -> arrows"
 	stateRows do: [ :stateRow | 
 		stateRow do: [ :state |
-			(state outs collect: [ :statePointer | statePointer state]) do: [ :targetState | | label |
-				transitionArrow := self arrowFrom: (stateToPosition at: state) to: (stateToPosition at: targetState).
+			(state outs collect: [ :statePointer | statePointer state]) do: [ :targetState | | label transitionArrow |
+				transitionArrow := self
+					arrowFrom: (stateToPosition at: state)
+					to: (stateToPosition at: targetState).
 					
 				label := StringMorph contents: state triggerLabel.
 				transitionArrow vertices last x - transitionArrow vertices first x = 0 ifTrue: [

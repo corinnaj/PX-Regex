@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addStateMorphFor:" : "lcj 7/3/2018 16:36",
 		"arrowFrom:to:" : "pf 7/2/2018 14:27",
 		"calculateCenterFor:" : "pf 7/2/2018 13:17",
 		"cellSize" : "pf 7/2/2018 14:25",
@@ -9,7 +10,7 @@
 		"initialExtent" : "lcj 6/29/2018 21:39",
 		"initialize" : "lcj 6/29/2018 21:40",
 		"put:into:at:positionDict:" : "pf 7/2/2018 13:19",
-		"show:" : "pf 7/2/2018 14:39",
+		"show:" : "lcj 7/3/2018 16:31",
 		"stateDiameter" : "pf 7/2/2018 12:55",
 		"tnfa" : "pf 6/5/2018 12:33",
 		"tnfa:" : "pf 6/5/2018 12:34" } }
