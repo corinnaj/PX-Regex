@@ -1,10 +1,11 @@
 {
 	"class" : {
-		"open" : "lcj 7/3/2018 15:29" },
+		"open" : "pf 7/3/2018 15:52" },
 	"instance" : {
 		"buildMatchAndNotMatchQuiz0" : "KB 7/3/2018 16:26",
-		"buildPresentation" : "KB 7/3/2018 16:34",
+		"buildPresentation" : "KB 7/3/2018 16:51",
 		"introJoke" : "lcj 7/2/2018 15:49",
 		"introSlide" : "lcj 7/2/2018 15:48",
 		"matchAllStringsQuiz0" : "KB 7/3/2018 16:31",
-		"matchAndNotMatchQuiz0" : "KB 7/3/2018 16:31" } }
+		"matchAndNotMatchQuiz0" : "KB 7/3/2018 16:31",
+		"nfaSlide" : "pf 7/3/2018 16:20" } }

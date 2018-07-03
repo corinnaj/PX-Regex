@@ -1,7 +1,7 @@
 simulation
-simulateOn: aString
+submatchesSimulateOn: aString
 "returns an OrderedCollection mapping from index in aString to the states the NFA is in at that point of the simulation"
-	| currentStates nextStates nextState currentState activeStates |
+	| currentStates nextStates nextState currentState activeStates initialStates |
 	activeStates := OrderedCollection new.
 	currentStates := OrderedCollection new.
 	
@@ -11,8 +11,9 @@ simulateOn: aString
 		currentState := currentState outs second state.
 	].
 	currentStates add: currentState.
+	initialStates := currentStates copy.
 				
-	nextStates := OrderedCollection new.
+	nextStates := initialStates copy.
 	aString do: [ :character |
 		activeStates add: currentStates asSet.
 		currentStates do: [ :state |
@@ -27,7 +28,7 @@ simulateOn: aString
 		].
 	
 		currentStates := nextStates.
-		nextStates := OrderedCollection new.
+		nextStates := initialStates copy.
 	].
 	activeStates add: currentStates asSet.
 	^activeStates
