@@ -42,4 +42,4 @@ show: aTNFA
 		].
 	].
 
-	self bounds: (Rectangle merging: submorphs).
+	self bounds: self boundingBoxOfSubmorphs

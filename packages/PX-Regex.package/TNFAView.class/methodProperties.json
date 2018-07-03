@@ -1,16 +1,15 @@
 {
 	"class" : {
-		 },
+		"forRegex:" : "pf 7/3/2018 16:06" },
 	"instance" : {
 		"addStateMorphFor:" : "lcj 7/3/2018 16:36",
 		"arrowFrom:to:" : "pf 7/2/2018 14:27",
-		"calculateCenterFor:" : "pf 7/2/2018 13:17",
+		"calculateCenterFor:" : "lcj 7/3/2018 16:33",
 		"cellSize" : "pf 7/2/2018 14:25",
-		"highlightActiveStatesFor:At:" : "pf 7/2/2018 16:18",
-		"initialExtent" : "lcj 6/29/2018 21:39",
-		"initialize" : "lcj 6/29/2018 21:40",
+		"highlightActiveStatesFor:At:" : "pf 7/3/2018 15:38",
+		"initialize" : "pf 7/3/2018 16:09",
 		"put:into:at:positionDict:" : "pf 7/2/2018 13:19",
-		"show:" : "lcj 7/3/2018 16:31",
+		"show:" : "lcj 7/3/2018 17:27",
 		"stateDiameter" : "pf 7/2/2018 12:55",
 		"tnfa" : "pf 6/5/2018 12:33",
 		"tnfa:" : "pf 6/5/2018 12:34" } }
