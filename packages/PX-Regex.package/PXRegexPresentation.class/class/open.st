@@ -1,8 +1,8 @@
 as yet unclassified
 open
-
-	self new
+	| instance |
+	instance := self new
 		buildPresentation;
 		openInWindow;
-		enterPresentationMode;
-		showSlide: 2
+		enterPresentationMode.
+	instance showSlide: instance slides size.

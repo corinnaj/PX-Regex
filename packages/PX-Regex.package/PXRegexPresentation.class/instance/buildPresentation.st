@@ -5,6 +5,8 @@ buildPresentation
 		addSlide: self introSlide;
 		addSlide: self introJoke;
 		addSlide: self tutorial0;
+		addSlide: self tutorial1;
+		addSlide: self tutorial2;
 		addSlide: self matchAndNotMatchQuiz0;
 		addSlide: self matchAllStringsQuiz0;
 		addSlide: self nfaSlide;

@@ -1,13 +1,15 @@
 {
 	"class" : {
-		"open" : "lcj 7/3/2018 15:29" },
+		"open" : "pf 7/3/2018 15:52" },
 	"instance" : {
 		"buildMatchAndNotMatchQuiz0" : "KB 7/3/2018 16:26",
-		"buildPresentation" : "lcj 7/3/2018 17:28",
+		"buildPresentation" : "lcj 7/3/2018 17:47",
 		"introJoke" : "lcj 7/2/2018 15:49",
 		"introSlide" : "lcj 7/2/2018 15:48",
 		"matchAllStringsQuiz0" : "KB 7/3/2018 16:31",
 		"matchAndNotMatchQuiz0" : "KB 7/3/2018 16:31",
 		"nfaSlide" : "pf 7/3/2018 16:20",
-		"tutorial0" : "lcj 7/3/2018 15:43",
+		"tutorial0" : "lcj 7/3/2018 17:44",
+		"tutorial1" : "lcj 7/3/2018 17:45",
+		"tutorial2" : "lcj 7/3/2018 17:46",
 		"workspace" : "lcj 7/3/2018 16:59" } }
