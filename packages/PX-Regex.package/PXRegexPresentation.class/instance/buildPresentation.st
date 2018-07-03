@@ -4,4 +4,4 @@ buildPresentation
 	^ self
 		addSlide: self introSlide;
 		addSlide: self introJoke;
-		addSlide: self nfaSlide
+		addSlide: self matchAndNotMatchQuiz0
