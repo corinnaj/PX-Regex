@@ -3,4 +3,5 @@ buildPresentation
 
 	^ self
 		addSlide: self introSlide;
-		addSlide: self introJoke
+		addSlide: self introJoke;
+		addSlide: self matchAndNotMatchQuiz0
