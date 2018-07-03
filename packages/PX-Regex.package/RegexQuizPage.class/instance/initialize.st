@@ -15,7 +15,9 @@ initialize
 				add: (PHLabel text: 'and none of these entries:');
 				add: (matchesNotArea := PHPage column)));
 		add: PHDivider new;
-		add: (regexArea := PHTextArea new when: #changed send: #updateExplanation to: self);
+		add: (regexArea := PHTextArea new
+			when: #changed send: #updateExplanation to: self;
+			when: #changed send: #checkRegex to: self);
 		add: (explanation := PHMorphContainer new
 			visible: false;
 			expand: true);
@@ -23,6 +25,5 @@ initialize
 			align: #(end end);
 			add: ((PHButton text: 'Explain Regex')
 				when: #clicked send: #toggleExplainRegex to: self);
-			add: ((PHButton text: 'Check Regex')
-				when: #clicked send: #checkRegex to: self));
-		extent: 450 @ 400
+		extent: 450 @ 400);
+		checkRegex
