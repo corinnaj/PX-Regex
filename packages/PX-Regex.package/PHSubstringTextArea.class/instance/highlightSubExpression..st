@@ -3,6 +3,7 @@ highlightSubExpression: anIndex
 
 	| range subString |
 	range := self getSubStringIndexForIndex: anIndex.
+	
 	range
 		ifNotNil: [
 			subString :=  (self text copyFrom: range start to: anIndex) asString.
@@ -10,4 +11,5 @@ highlightSubExpression: anIndex
 		ifNil: [self tool subStringSelected: ''].
 	
 	self tool nfaView ifNotNil: [
-		self tool nfaView highlightActiveStatesFor: self text At: anIndex]
+		self regex ifNotEmpty: [
+			self tool nfaView highlightActiveStatesFor: self text At: anIndex]]

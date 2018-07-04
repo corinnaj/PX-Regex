@@ -2,8 +2,8 @@
 	"class" : {
 		"newForTool:" : "lcj 6/29/2018 13:11" },
 	"instance" : {
-		"getSubStringIndexForIndex:" : "lcj 7/2/2018 12:16",
-		"highlightSubExpression:" : "lcj 7/3/2018 15:39",
+		"getSubStringIndexForIndex:" : "lcj 7/4/2018 13:26",
+		"highlightSubExpression:" : "lcj 7/4/2018 14:55",
 		"initialize" : "lcj 7/2/2018 10:42",
 		"matchRegex" : "lcj 7/2/2018 12:35",
 		"regex" : "lcj 6/29/2018 11:58",

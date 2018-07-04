@@ -4,5 +4,5 @@ open
 	instance := self new
 		buildPresentation;
 		openInWindow;
-		enterPresentationMode.
-	instance showSlide: instance slides size.
+		enterPresentationMode;
+		showFirstSlide

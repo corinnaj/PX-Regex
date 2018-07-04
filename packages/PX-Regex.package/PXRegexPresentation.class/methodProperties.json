@@ -1,14 +1,15 @@
 {
 	"class" : {
-		"open" : "pf 7/3/2018 15:52" },
+		"open" : "lcj 7/4/2018 15:06" },
 	"instance" : {
 		"buildMatchAndNotMatchQuiz0" : "KB 7/3/2018 16:26",
-		"buildPresentation" : "lcj 7/4/2018 10:35",
+		"buildPresentation" : "lcj 7/4/2018 14:38",
 		"introJoke" : "lcj 7/2/2018 15:49",
 		"introSlide" : "lcj 7/2/2018 15:48",
 		"matchAllStringsQuiz0" : "KB 7/3/2018 16:31",
 		"matchAndNotMatchQuiz0" : "KB 7/3/2018 16:31",
 		"nfaSlide" : "pf 7/3/2018 16:20",
+		"tool" : "lcj 7/4/2018 14:43",
 		"tutorial0substringAreaText" : "lcj 7/4/2018 10:34",
 		"tutorial1regexAreaText" : "lcj 7/4/2018 10:33",
 		"tutorial1substringAreaText" : "lcj 7/4/2018 10:33",

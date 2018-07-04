@@ -11,4 +11,5 @@ buildPresentation
 		addSlide: self matchAllStringsQuiz0;
 		addSlide: self nfaSlide;
 		workspace;
+		addSlide: self tool;
 		yourself
