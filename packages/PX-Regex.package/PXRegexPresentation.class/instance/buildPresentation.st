@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 buildPresentation
 
 	^ self
@@ -10,6 +10,7 @@ buildPresentation
 		addSlide: self matchAndNotMatchQuiz0;
 		addSlide: self matchAllStringsQuiz0;
 		addSlide: self nfaSlide;
-		workspace;
+		addSlide: self uglyDfaPage;
+		"workspace;"
 		addSlide: self tool;
 		yourself
