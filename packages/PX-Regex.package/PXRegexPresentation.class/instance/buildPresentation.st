@@ -4,6 +4,7 @@ buildPresentation
 	^ self
 		addSlide: self introSlide;
 		addSlide: self introJoke;
+		addSlide: self regexRecap;
 		addSlide: (self tutorialForSubstring: self tutorial0substringAreaText  regex: '');
 		addSlide: (self tutorialForSubstring: self tutorial1substringAreaText  regex: self tutorial1regexAreaText);
 		addSlide: (self tutorialForSubstring: self tutorial2substringAreaText  regex: self tutorial2regexAreaText);

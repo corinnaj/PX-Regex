@@ -12,5 +12,5 @@ highlightSubExpression: anIndex
 	
 	self tool nfaView ifNotNil: [
 		self regex ifNotEmpty: [
-			subString ifNotNil: [ 
-				self tool nfaView highlightActiveStatesFor: self text At: anIndex] ifNil: [self tool nfaView highlightActiveStatesFor: ' ' At: 0]]]
+			self text ifNotEmpty: [ 
+				self tool nfaView highlightActiveStatesFor: self text At: anIndex] ifEmpty: [self tool nfaView highlightActiveStatesFor: ' ' At: 0]]]
