@@ -8,12 +8,6 @@ initializeRightColumn
 			oppositeTo: ((PHButton text: 'Toggle Full View of NFA')
 				small;
 				when: #clicked send: #toggleFullNFA to: self));
-		add: (PHPage row
-			add: ((nfaStepRegex := PHTextArea placeholder: 'Enter String to match against NFA...')
-				expand: true);
-			add: ((PHButton text: 'Step')
-				small;
-				when: #clicked send: #step to: self));
 		add: (nfaScrollArea := (PHScrollArea new)
 			expand: true;
 			inStickyMode: false;
