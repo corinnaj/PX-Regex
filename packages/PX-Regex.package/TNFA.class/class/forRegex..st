@@ -1,4 +1,4 @@
 instance creation
-forRegex: pattern
+forRegex: regex
 	
-	^TNFA new forPostfixRegex: (TNFA toPostfixNotation: pattern)
+	^TNFA new forPostfixRegex: (TNFA toPostfixRegex: regex)
