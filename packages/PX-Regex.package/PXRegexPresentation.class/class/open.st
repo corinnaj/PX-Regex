@@ -3,6 +3,6 @@ open
 	| instance |
 	instance := self new
 		buildPresentation;
-		openInWindow;
+		openInWindow
 		"enterPresentationMode;"
-		showFirstSlide
+		"showFirstSlide"

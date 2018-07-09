@@ -1,8 +1,14 @@
 tool slides
 nfaTool
 
-	self addSlideWithCenterBox 
-		add: ((PHLabel text: 'The NFA we saw before')
-			pointSize: 30).
-			
-	self flag: #todo. "add nfa to slide"
+	| tool x |
+	tool := TheUltimateRegexTool new.
+	
+	tool leftColumn visible: false.
+	tool efficiencyArea visible: false.
+	x := tool substringArea.
+	
+
+	self addSlideWithCenterBox
+		add: tool;
+		add: x

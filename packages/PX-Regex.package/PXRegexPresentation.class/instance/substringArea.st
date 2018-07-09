@@ -4,7 +4,6 @@ substringArea
 	| regexArea substringArea |
 	
 	substringArea := (PHSubstringTextArea new)
-			minRows: 2;
 			multiLine: true;
 			pointSize: 30;
 			text: 'This is my text.
@@ -21,8 +20,6 @@ But don''t match something@test.'.
 		tool: regexArea;
 		matchRegex.
 
-	self addSlideWithCenterBox 
-		add:  ((PHLabel text: 'Quickly find what your regex matches in a text')
-			pointSize: 30);
+	self addSlideWithCenterBox
 		add: regexArea;
 		add: substringArea

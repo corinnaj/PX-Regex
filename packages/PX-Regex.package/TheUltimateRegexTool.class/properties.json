@@ -19,7 +19,8 @@
 		"fullPage",
 		"nfaStepRegex",
 		"efficiencyTextArea",
-		"matcherContainer" ],
+		"matcherContainer",
+		"efficiencyArea" ],
 	"name" : "TheUltimateRegexTool",
 	"pools" : [
 		 ],
