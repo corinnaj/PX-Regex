@@ -2,14 +2,13 @@ initialization
 buildPresentation
 
 	^ self
-		substringAndNFA;
+		nfaSlide4Simulation;
 		intro;
 		addSlide: self matchAllStringsQuiz0;
 		decisionTree1;
 		decisionTree2;
 		decisionTree3;
 		inspector;
-		addSlide: self nfaSlide;
 		"addSlide: self uglyDfaPage;"
 		ourTools;
 		yourself

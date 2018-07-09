@@ -86,7 +86,9 @@ forPostfixRegexVisual: postfixRegex
 			fragment := stackToShow pop.
 			TStateMatch new patch: fragment outs.
 			col add: (PHMorphContainer new add: (TNFAView new show: (TNFA new initialState: fragment start; yourself); yourself); yourself)].
-		col add: ((PHLabel text: stringUpToHere contents asString) pointSize: 40; yourself).
+		col 
+			add: ((PHLabel text: stringUpToHere contents asString) pointSize: 40);
+			add: ((PHLabel text: ' ') pointSize: 10).
 		targetMorph add: col.
 		
 	].
@@ -95,4 +97,4 @@ forPostfixRegexVisual: postfixRegex
 	initialState := fragment start.
 	
 
-PHScrollArea new policy: #(scroll scroll); extent: 1500@800; content: targetMorph; openInWindow.
+^PHScrollArea new policy: #(scroll scroll); content: targetMorph

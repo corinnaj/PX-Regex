@@ -27,4 +27,7 @@ testMatches
 
 	(self expect: ((TNFA forRegex: '\[') matches: '[')) to equal: true.
 	(self expect: ((TNFA forRegex: '\[') matches: '\[')) to equal: false.
+			
+	(self expect: ((TNFA forRegex: 'a(bc|d)*') matches: 'a')) to equal: true.
 		
+	

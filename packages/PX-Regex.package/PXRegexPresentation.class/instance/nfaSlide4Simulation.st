@@ -1,15 +1,14 @@
-as yet unclassified
-substringAndNFA
+automata
+nfaSlide4Simulation
 
 	| regexArea substringArea regexString nfaView |
 	
-	regexString := 'as+'.
+	regexString := '[01]*1[01][01][01]'.
 	
 	substringArea := (PHSubstringTextArea new)
 			minRows: 2;
 			multiLine: true;
-			pointSize: 30;
-			text: 'asdasD'.
+			pointSize: 30.
 	
 	nfaView := TNFAView new showTNFAFor: regexString.
 	
@@ -22,6 +21,7 @@ substringAndNFA
 	substringArea when: #changed send:#matchRegex to: substringArea.
 
 	self addSlideWithCenterBox
+		add: ((PHLabel text: 'NFA - nondeterministic finite automaton') pointSize: 45);
+		add: (PHMorphContainer new add: nfaView);
 		add: ((PHLabel text: regexString) pointSize: 30);
-		add: substringArea;
-		add: (PHMorphContainer new add: nfaView)
+		add: substringArea
