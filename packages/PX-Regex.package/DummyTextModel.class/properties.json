@@ -1,0 +1,14 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"text" ],
+	"name" : "DummyTextModel",
+	"pools" : [
+		 ],
+	"super" : "Model",
+	"type" : "normal" }
