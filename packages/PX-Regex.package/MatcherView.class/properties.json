@@ -6,8 +6,15 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"pos" ],
-	"name" : "ThatView",
+		"pos",
+		"matcher",
+		"matchingString",
+		"stringLabel",
+		"counter",
+		"inspector",
+		"currentStep",
+		"stepSpeed" ],
+	"name" : "MatcherView",
 	"pools" : [
 		 ],
 	"super" : "PHPage",

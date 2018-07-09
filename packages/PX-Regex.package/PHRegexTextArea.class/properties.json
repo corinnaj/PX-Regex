@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"nfaView" ],
 	"name" : "PHRegexTextArea",
 	"pools" : [
 		 ],

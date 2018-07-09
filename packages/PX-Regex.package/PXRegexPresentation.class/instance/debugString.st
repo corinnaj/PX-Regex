@@ -1,4 +1,4 @@
-as yet unclassified
+tool slides
 debugString
 	
 	self addSlideWithCenterBox

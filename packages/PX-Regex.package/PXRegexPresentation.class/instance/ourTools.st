@@ -2,7 +2,8 @@ initialization
 ourTools
 
 	^ self 
-		debugString;
 		visualExplanation;
 		explanationWithLines;
-		substringArea
+		substringArea;
+		debugString;
+		nfaTool

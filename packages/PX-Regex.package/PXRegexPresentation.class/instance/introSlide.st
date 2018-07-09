@@ -1,4 +1,4 @@
-as yet unclassified
+intro
 introSlide
 
 	^ PHPage column
@@ -10,4 +10,8 @@ introSlide
 		add: ((PHLabel text: 'A tutorial by Pascal Führlich, Kim Borchart and Corinna Jaschek')
 			pointSize: 25;
 			align: #(center center));
-		add: (PHWidget spacer)
+		add: (PHWidget spacer);
+		add: ((PHLabel text: 'Programming Experience - SS18 - Prof. Dr. Robert Hirschfeld, Jens Lincke, Stefan Ramson')
+			align: #(center center);
+			addApplicationStyles: (PHStyle forAny color: Color lightGray);
+			pointSize: 20)
