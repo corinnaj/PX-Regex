@@ -12,4 +12,6 @@ initializeRightColumn
 			expand: true;
 			inStickyMode: false;
 			policy: #(scroll show);
-			content: (nfaContainer := PHMorphContainer new add: (nfaView := TNFAView new)))
+			content: (nfaContainer := PHMorphContainer new add: (nfaView := TNFAView new)));
+		add: (PHLabel subHeading: 'Check the Efficiency of Your Regex');
+		add: self efficiencyArea

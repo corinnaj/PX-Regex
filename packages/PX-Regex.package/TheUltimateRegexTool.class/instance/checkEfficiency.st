@@ -6,7 +6,8 @@ checkEfficiency
 	
 	matcherContainer
 		removeAllMorphs;
-		add: (MatcherView newForRegex: self regex andString: string)
+		add: ((MatcherView newForRegex: self regex andString: string)
+			position: matcherContainer position)
 	
 	
 	

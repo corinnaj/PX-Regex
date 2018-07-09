@@ -9,6 +9,4 @@ initializeLeftColumn
 		add: (PHLabel subHeading: 'Substring Matches:');
 		add: (substringTextArea := PHSubstringTextArea newForTool: self);
 		add: (PHLabel subHeading: 'Find Out Which Strings Match Your Regex:');
-		add: (testlineArea := PHPage column);
-		add: (PHLabel subHeading: 'Check the Efficiency of Your Regex');
-		add: self efficiencyArea
+		add: (testlineArea := PHPage column)
