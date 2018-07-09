@@ -1,8 +1,11 @@
 private
-forPostfixRegex: postfixRegex
+forPostfixRegexVisual: postfixRegex
 	"all characters are taken literally except: . (concatenation), | (alternation), ? (optional), * (at least 0 repetitions), + (at least 1 repetition), ] (concatination for character sets []), ^ (negating [])"
 	"expects postfix notation: 'ab.c|' instead of 'ab|c' and 'ab.a?.*' instead of '(aba?)*'"
-	| stack fragment fragment2 state triggerSet |
+	| stack fragment fragment2 state triggerSet targetMorph stackToShow col stringUpToHere |
+	targetMorph := PHPage row.
+	stringUpToHere := AttributedTextStream new.
+	
 	stack := Stack new.
 	postfixRegex do: [ :character | 
 		(stack isEmpty not and: [stack top start isBackslash]) ifTrue: [
@@ -75,8 +78,21 @@ forPostfixRegex: postfixRegex
 				stack push: (TFragment new start: state; outs: state outs; yourself).
 			].
 		].
+	
+		stringUpToHere nextPut: character.
+		stackToShow := stack veryDeepCopy.
+		col := PHPage column add: (PHWidget spacer); color: Color lightGray; yourself.
+		[stackToShow isEmpty not] whileTrue: [
+			fragment := stackToShow pop.
+			TStateMatch new patch: fragment outs.
+			col add: (PHMorphContainer new add: (TNFAView new show: (TNFA new initialState: fragment start; yourself); yourself); yourself)].
+		col add: ((PHLabel text: stringUpToHere contents asString) pointSize: 40; yourself).
+		targetMorph add: col.
+		
 	].
 	fragment := stack pop.
 	TStateMatch new patch: fragment outs.
 	initialState := fragment start.
 	
+
+PHScrollArea new policy: #(scroll scroll); extent: 1500@800; content: targetMorph; openInWindow.

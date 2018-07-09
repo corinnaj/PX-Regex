@@ -1,6 +1,6 @@
 private
-toPostfixNotation: pattern
-	| postfixPattern currentGroup parenthesisStack numAlternatives numAtoms numAtomsInBrackets inBrackets fillingCharacterRange characterRangeStart characterRange negatedBrackets escapeNext |
+toPostfixRegex: regex
+	| postfixRegex currentGroup parenthesisStack numAlternatives numAtoms numAtomsInBrackets inBrackets fillingCharacterRange characterRangeStart characterRange negatedBrackets escapeNext |
 	numAlternatives := 0.
 	numAtoms := 0.
 	numAtomsInBrackets := 0.
@@ -10,13 +10,13 @@ toPostfixNotation: pattern
 	characterRangeStart := $a.
 	escapeNext := false.
 	
-	postfixPattern := AttributedTextStream new.
+	postfixRegex := AttributedTextStream new.
 	parenthesisStack := Stack new.
 	
-	pattern do: [ :aCharacter | 
+	regex do: [ :aCharacter | 
 		escapeNext ifTrue: [
 			escapeNext := false.
-			postfixPattern nextPut: (aCharacter caseOf: {
+			postfixRegex nextPut: (aCharacter caseOf: {
 				[$n] -> [Character lf].
 				[$r] -> [Character cr].
 				[$t] -> [Character tab].
@@ -26,9 +26,9 @@ toPostfixNotation: pattern
 			inBrackets ifTrue: [
 				aCharacter caseOf: {
 					[$]] -> [
-						postfixPattern nextPutAll: (String new: numAtomsInBrackets-1 withAll: $]).
+						postfixRegex nextPutAll: (String new: numAtomsInBrackets-1 withAll: $]).
 						negatedBrackets ifTrue: [
-							postfixPattern nextPut: $^.
+							postfixRegex nextPut: $^.
 						].					
 						inBrackets := false.
 						negatedBrackets := false.
@@ -39,7 +39,7 @@ toPostfixNotation: pattern
 						fillingCharacterRange := true.
 					].
 					[$\] -> [
-						postfixPattern nextPut: $\.
+						postfixRegex nextPut: $\.
 						escapeNext := true.
 					].
 				} otherwise: [
@@ -47,13 +47,13 @@ toPostfixNotation: pattern
 						fillingCharacterRange := false.
 						characterRange :=  ((characterRangeStart asInteger + 1) asCharacter to: aCharacter).
 						numAtomsInBrackets := numAtomsInBrackets + characterRange size.
-						postfixPattern nextPutAll: characterRange.
+						postfixRegex nextPutAll: characterRange.
 					] ifFalse: [
 						(aCharacter = $^ and: [numAtomsInBrackets = 0]) ifTrue: [
 							negatedBrackets := true.
 						] ifFalse: [
 							numAtomsInBrackets := numAtomsInBrackets + 1.
-							postfixPattern nextPut: aCharacter.	
+							postfixRegex nextPut: aCharacter.	
 							characterRangeStart := aCharacter.
 						]
 					]
@@ -63,7 +63,7 @@ toPostfixNotation: pattern
 					[$(] -> [
 						numAtoms > 1 ifTrue: [
 							numAtoms := numAtoms - 1.
-							postfixPattern nextPut: $..
+							postfixRegex nextPut: $..
 						].
 						parenthesisStack push: {numAlternatives . numAtoms}.
 						numAlternatives := 0.
@@ -73,8 +73,8 @@ toPostfixNotation: pattern
 						parenthesisStack isEmpty ifTrue: [ Error signal: 'Error: ")" before "("' ].
 						numAtoms = 0 ifTrue: [ Error signal: 'Error: empty group??!' ].
 						
-						postfixPattern nextPutAll: (String new: numAtoms-1 withAll: $.).
-						postfixPattern nextPutAll: (String new: numAlternatives withAll: $|).
+						postfixRegex nextPutAll: (String new: numAtoms-1 withAll: $.).
+						postfixRegex nextPutAll: (String new: numAlternatives withAll: $|).
 						currentGroup := parenthesisStack pop.
 						numAlternatives := currentGroup first.
 						numAtoms := currentGroup second + 1.
@@ -82,24 +82,24 @@ toPostfixNotation: pattern
 					[$|] -> [
 						numAtoms = 0 ifTrue: [ Error signal: 'Error: first alternative is empty' ].
 						
-						postfixPattern nextPutAll: (String new: numAtoms-1 withAll: $.).
+						postfixRegex nextPutAll: (String new: numAtoms-1 withAll: $.).
 						numAtoms := 0.
 						numAlternatives := numAlternatives + 1.
 					].
 					[$?] -> [
 						numAtoms = 0 ifTrue: [ Error signal: 'Error: nothing to optionally skip' ].
 						
-						postfixPattern nextPut: $?.
+						postfixRegex nextPut: $?.
 					].
 					[$*] -> [
 						numAtoms = 0 ifTrue: [ Error signal: 'Error: nothing to repeat' ].
 						
-						postfixPattern nextPut: $*.
+						postfixRegex nextPut: $*.
 					].
 					[$+] -> [
 						numAtoms = 0 ifTrue: [ Error signal: 'Error: nothing to repeat' ].
 						
-						postfixPattern nextPut: $+.
+						postfixRegex nextPut: $+.
 					].
 					[$[] -> [
 						inBrackets := true.
@@ -107,31 +107,31 @@ toPostfixNotation: pattern
 					[$.] -> [
 						numAtoms > 1 ifTrue: [
 							numAtoms := numAtoms - 1.
-							postfixPattern nextPut: $..
+							postfixRegex nextPut: $..
 						].
-						postfixPattern nextPut: Character cr.
-						postfixPattern nextPut: Character lf.
-						postfixPattern nextPutAll: ']^'.
+						postfixRegex nextPut: Character cr.
+						postfixRegex nextPut: Character lf.
+						postfixRegex nextPutAll: ']^'.
 						numAtoms := numAtoms + 1.
 					].
 				} otherwise: [
 					numAtoms > 1 ifTrue: [
 						numAtoms := numAtoms - 1.
-						postfixPattern nextPut: $..
+						postfixRegex nextPut: $..
 					].
 					aCharacter caseOf: {
 						[$.] -> [
-							postfixPattern nextPut: Character cr.
-							postfixPattern nextPut: Character lf.
-							postfixPattern nextPutAll: ']^'.
+							postfixRegex nextPut: Character cr.
+							postfixRegex nextPut: Character lf.
+							postfixRegex nextPutAll: ']^'.
 							numAtoms := numAtoms + 1.
 						].
 						[$\] -> [
-							postfixPattern nextPut: $\.
+							postfixRegex nextPut: $\.
 							escapeNext := true.
 						]
 					} otherwise: [
-						postfixPattern nextPut: aCharacter.
+						postfixRegex nextPut: aCharacter.
 						numAtoms := numAtoms + 1.
 					].
 				].		
@@ -140,7 +140,7 @@ toPostfixNotation: pattern
 	].
 
 	parenthesisStack isEmpty ifFalse: [ Error signal: 'Error: missing closing parenthesis'].
-	postfixPattern nextPutAll: (String new: numAtoms-1 withAll: $.).
-	postfixPattern nextPutAll: (String new: numAlternatives withAll: $|).
+	postfixRegex nextPutAll: (String new: numAtoms-1 withAll: $.).
+	postfixRegex nextPutAll: (String new: numAlternatives withAll: $|).
 
-	^postfixPattern contents asString
+	^postfixRegex contents asString
