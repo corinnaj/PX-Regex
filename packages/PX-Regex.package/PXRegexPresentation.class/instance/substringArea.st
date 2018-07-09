@@ -9,7 +9,8 @@ substringArea
 			pointSize: 30;
 			text: 'This is my text.
 It contains several email addresses like jane.doe@hpi.de and john@smith.com.
-Try matching them all. abc123@test.co.uk'.
+Try matching them all: abc123@test.co.uk and anothertest@x.yz.
+But don''t match something@test.'.
 	
 	regexArea := (PHRegexTextArea new)
 		text: '[a-z.0-9]+@[a-z]+(\.[a-z]+)+';

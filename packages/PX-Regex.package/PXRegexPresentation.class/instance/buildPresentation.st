@@ -2,6 +2,7 @@ initialization
 buildPresentation
 
 	^ self
+		substringAndNFA;
 		intro;
 		addSlide: self matchAllStringsQuiz0;
 		addSlide: self nfaSlide;
