@@ -4,13 +4,14 @@
 	"instance" : {
 		"addTestLine" : "lcj 6/29/2018 19:56",
 		"checkEfficiency" : "lcj 7/9/2018 16:50",
-		"efficiencyArea" : "lcj 7/9/2018 16:27",
+		"efficiencyArea" : "lcj 7/9/2018 17:29",
 		"highlightRegexPartUntil:" : "lcj 7/2/2018 12:45",
 		"highlightSubStringInExpression:" : "lcj 7/2/2018 16:29",
 		"initialExtent" : "lcj 6/30/2018 10:02",
 		"initialize" : "lcj 7/1/2018 12:05",
+		"initializeEfficiencyArea" : "lcj 7/9/2018 17:30",
 		"initializeLeftColumn" : "lcj 7/9/2018 16:49",
-		"initializeRightColumn" : "lcj 7/9/2018 16:49",
+		"initializeRightColumn" : "lcj 7/9/2018 17:26",
 		"leftColumn" : "lcj 7/4/2018 14:40",
 		"match:against:ifFound:" : "lcj 7/2/2018 16:05",
 		"matchTestlines" : "lcj 6/29/2018 19:44",
@@ -19,5 +20,6 @@
 		"removeHighlights" : "lcj 7/2/2018 12:46",
 		"rightColumn" : "lcj 7/4/2018 14:41",
 		"subStringSelected:" : "lcj 7/2/2018 13:13",
+		"substringArea" : "lcj 7/9/2018 17:14",
 		"subtoolsMatchRegex" : "lcj 7/2/2018 11:54",
 		"toggleFullNFA" : "lcj 7/1/2018 12:05" } }

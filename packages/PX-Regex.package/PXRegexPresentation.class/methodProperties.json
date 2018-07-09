@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"open" : "lcj 7/9/2018 12:01" },
+		"open" : "lcj 7/9/2018 17:16" },
 	"instance" : {
 		"buildMatchAndNotMatchQuiz0" : "lcj 7/9/2018 12:44",
 		"buildPresentation" : "KB 7/9/2018 18:12",
@@ -19,18 +19,13 @@
 		"nfaPostfixParsingSlide" : "pf 7/3/2018 18:03",
 		"nfaPostfixSlide" : "pf 7/3/2018 17:46",
 		"nfaSlide" : "pf 7/3/2018 16:52",
-		"nfaTool" : "lcj 7/6/2018 18:33",
-		"ourTools" : "lcj 7/9/2018 13:02",
+		"nfaTool" : "lcj 7/9/2018 17:27",
+		"ourTools" : "lcj 7/9/2018 17:31",
+		"ourToolsIntro" : "lcj 7/9/2018 14:04",
 		"substringAndNFA" : "lcj 7/9/2018 16:12",
-		"substringArea" : "lcj 7/9/2018 14:28",
-		"tool" : "lcj 7/4/2018 14:43",
-		"tutorial0substringAreaText" : "lcj 7/4/2018 10:34",
-		"tutorial1regexAreaText" : "lcj 7/4/2018 10:33",
-		"tutorial1substringAreaText" : "lcj 7/4/2018 10:33",
-		"tutorial2regexAreaText" : "lcj 7/4/2018 10:29",
-		"tutorial2substringAreaText" : "lcj 7/4/2018 10:29",
-		"tutorialForSubstring:regex:" : "lcj 7/4/2018 10:31",
+		"substringArea" : "lcj 7/9/2018 17:12",
+		"tool" : "lcj 7/9/2018 17:01",
 		"uglyDfaPage" : "KB 7/6/2018 15:23",
-		"visualExplanation" : "lcj 7/6/2018 17:43",
+		"visualExplanation" : "lcj 7/9/2018 17:08",
 		"whatIsRegex" : "lcj 7/9/2018 13:01",
 		"whyRegex" : "lcj 7/9/2018 13:00" } }
