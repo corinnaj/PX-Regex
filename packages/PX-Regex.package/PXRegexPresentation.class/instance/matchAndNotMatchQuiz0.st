@@ -1,12 +1,10 @@
-as yet unclassified
+intro
 matchAndNotMatchQuiz0
 
-	^ PHPage column
-		expand: true;
-		add: ((PHLabel text: 'Lets use your newly acquired knowledge to solve a quiz!')
+	self addSlideWithCenterBox
+		add: ((PHLabel text: 'Before we go into depth, let''s make sure you understand regexes!')
 			pointSize: 30;
 			align: #(center center));
-		"Give the RegexQuiz at least a page!"
 		add: ((self buildMatchAndNotMatchQuiz0)
-			align: #(center center));
-			add: (PHWidget spacer)
+			addApplicationStyles: (PHStyle forAny fontSize: 24);
+			align: #(center center))

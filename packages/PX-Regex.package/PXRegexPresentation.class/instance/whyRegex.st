@@ -1,10 +1,12 @@
-as yet unclassified
+intro
 whyRegex
 
-	^ PHPage column
-		add: ((PHLabel text: 'Why are Regexes important?')
+	self addSlideWithCenterBox
+		add: ((PHLabel text: 'What are regexes used for?')
 			pointSize: 30);
-		add: ((PHLabel markup: '* used for data validation
-* data extraction
-* changing lots of file names at once')
+		add: (PHWidget spacer);
+		add: (PHWidget spacer);
+		add: ((PHLabel markup: '*<b> used for data validation </b>(is this a correct email?)
+*<b> data extraction </b>(get all emails out of a text)
+*<b> search and replace </b>')
 			pointSize: 24)

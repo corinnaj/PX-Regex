@@ -1,12 +1,12 @@
-as yet unclassified
+intro
 buildMatchAndNotMatchQuiz0
 
-	| page1 page2 page3 |
+	| page1 page2 |
+
+	page2 := RegexQuizPage new
+		matches: {'00'. '123'}; matchesNot: {'ab'. 'a1'}.
 
 	page1 := RegexQuizPage new
-		matches: {#abb. #abc. #abz}; matchesNot: {'ab+'. #ab. #ab1}.
-	page2 := RegexQuizPage new
-		matches: {#asd.#asasdas. #asd12s}; matchesNot: {#abc. #abds. #as}.
-	page3 := PHLabel bold: 'Quiz completed!'.
+		matches: {#ab. #b}; matchesNot: {#aab. #abbb}.
 
-	^PHQuiz new pages: {page1. page2. page3}; currentPageIndex: 1
+	^PHQuiz new pages: {page1. page2}; currentPageIndex: 1
