@@ -5,8 +5,10 @@ buildPresentation
 		substringAndNFA;
 		intro;
 		addSlide: self matchAllStringsQuiz0;
-		addSlide: self nfaSlide;
+		decisionTree1;
+		decisionTree2;
 		inspector;
+		addSlide: self nfaSlide;
 		"addSlide: self uglyDfaPage;"
 		ourTools;
 		yourself
