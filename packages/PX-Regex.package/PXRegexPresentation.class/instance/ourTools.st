@@ -5,4 +5,5 @@ ourTools
 		debugString;
 		visualExplanation;
 		explanationWithLines;
-		substringArea
+		substringArea;
+		nfaTool

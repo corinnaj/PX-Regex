@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"new" : "lcj 7/8/2018 19:48",
+		"newForRegex:andString:" : "lcj 7/8/2018 19:55" },
+	"instance" : {
+		"afterHover:atIndex:" : "lcj 7/8/2018 22:00",
+		"currentStep:" : "lcj 7/8/2018 21:57",
+		"highlightColor" : "lcj 7/8/2018 21:30",
+		"incrementAfterHover" : "lcj 7/8/2018 22:08",
+		"initializeForRegex:andString:" : "lcj 7/9/2018 11:39",
+		"matcher" : "lcj 7/8/2018 19:57",
+		"matcher:" : "lcj 7/8/2018 19:57",
+		"matchingString" : "lcj 7/8/2018 20:00",
+		"matchingString:" : "lcj 7/8/2018 19:59",
+		"showMatch" : "lcj 7/8/2018 22:19",
+		"startStepping" : "lcj 7/9/2018 11:39",
+		"stepSpeed" : "lcj 7/9/2018 11:39",
+		"stepSpeed:" : "lcj 7/9/2018 11:39" } }

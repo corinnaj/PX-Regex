@@ -11,6 +11,7 @@ buildPresentation
 		addSlide: self matchAndNotMatchQuiz0;
 		addSlide: self matchAllStringsQuiz0;
 		addSlide: self nfaSlide;
+		inspector;
 		"addSlide: self uglyDfaPage;"
 		ourTools;
 		yourself
