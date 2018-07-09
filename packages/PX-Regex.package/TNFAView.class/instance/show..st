@@ -41,5 +41,6 @@ show: aTNFA
 			].
 		].
 	].
-
+	self highlightActiveStatesFor: '' at: 0.
+	
 	self bounds: self boundingBoxOfSubmorphs
