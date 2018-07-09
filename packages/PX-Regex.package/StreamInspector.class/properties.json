@@ -1,0 +1,16 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"myGuy",
+		"matcher",
+		"record" ],
+	"name" : "StreamInspector",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

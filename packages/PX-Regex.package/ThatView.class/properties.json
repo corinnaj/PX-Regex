@@ -1,0 +1,14 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pos" ],
+	"name" : "ThatView",
+	"pools" : [
+		 ],
+	"super" : "PHPage",
+	"type" : "normal" }
