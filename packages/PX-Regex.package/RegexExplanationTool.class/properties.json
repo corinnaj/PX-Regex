@@ -12,5 +12,5 @@
 	"name" : "RegexExplanationTool",
 	"pools" : [
 		 ],
-	"super" : "PHTool",
+	"super" : "PHRegexTester",
 	"type" : "normal" }
