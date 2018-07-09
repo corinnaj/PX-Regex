@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 removeHighlights
 
 	regexArea removeAttribute: (TextColor color: Color green)

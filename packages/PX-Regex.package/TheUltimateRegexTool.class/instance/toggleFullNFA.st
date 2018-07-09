@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 toggleFullNFA
 
 	leftColumn visible: leftColumn visible not.
