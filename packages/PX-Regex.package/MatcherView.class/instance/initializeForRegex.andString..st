@@ -25,7 +25,7 @@ initializeForRegex: aRegexString andString: aString
 		collapsed: true).
 	
 	header := PHCardHeader new
-			add: (PHLabel markup: '<b>Number of Steps total: ', inspector record size,  '</b>');
+			add: (headerLabel := (PHLabel markup: '<b>Number of Steps total: ', inspector record size,  '</b>') visible: false);
 			when: #clicked send: #toggleCollapsed to: body;
 			yourself.
 	

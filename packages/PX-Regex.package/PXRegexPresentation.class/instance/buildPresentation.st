@@ -3,7 +3,8 @@ buildPresentation
 
 	^ self
 		intro;
-		inspector;
+		inspector1Before;
+		inspector1;
 		inspector2;
 		aOptional;
 		decisionTree1;
