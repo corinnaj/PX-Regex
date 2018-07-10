@@ -8,7 +8,8 @@
 	"instvars" : [
 		"tnfa",
 		"stateToCircle",
-		"activeStates" ],
+		"activeStates",
+		"isHighlightingSubmatches" ],
 	"name" : "TNFAView",
 	"pools" : [
 		 ],

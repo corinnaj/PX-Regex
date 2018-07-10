@@ -1,8 +1,7 @@
 as yet unclassified
 open
-	| instance |
-	instance := self new
+	self new
 		buildPresentation;
-		openInWindow
-		"enterPresentationMode;"
-		"showFirstSlide"
+		openInWindow;
+		enterPresentationMode;
+		showFirstSlide
