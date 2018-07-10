@@ -1,4 +1,4 @@
-automata
+automata slides
 nfaSlide8RegexToPostfixRegex
 	self addSlideWithCenterBox
 		add: ((PHLabel text: 'NFA construction - Thompsons Algorithm') pointSize: 45);

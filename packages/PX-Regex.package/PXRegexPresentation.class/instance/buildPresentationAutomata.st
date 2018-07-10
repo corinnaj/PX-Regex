@@ -1,4 +1,4 @@
-automata
+automata slides
 buildPresentationAutomata
 
 	^ self 
@@ -9,7 +9,8 @@ buildPresentationAutomata
 		nfaSlide22NFASample;
 		nfaSlide3SimulationDescription; 
 		nfaSlide4Simulation;
-		nfaSlide5CrazyDFA;
+		nfaSlide51CrazyDFA;
+		nfaSlide52CrazyDFA;
 		nfaSlide6Properties;
 		nfaSlide7ConstructionOverview;
 		nfaSlide8RegexToPostfixRegex;

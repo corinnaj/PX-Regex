@@ -1,4 +1,4 @@
-automata
+automata slides
 nfaSlide3SimulationDescription
 	| regex |
 	regex := '[01]*1[01][01][01]'.

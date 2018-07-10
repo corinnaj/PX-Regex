@@ -1,4 +1,4 @@
-automata
+automata slides
 nfaSlide4Simulation
 
 	| regexArea substringArea regexString nfaView |
@@ -21,7 +21,7 @@ nfaSlide4Simulation
 	substringArea when: #changed send:#matchRegex to: substringArea.
 
 	self addSlideWithCenterBox
-		add: ((PHLabel text: 'NFA - nondeterministic finite automaton') pointSize: 45);
+		add: ((PHLabel text: 'NFA - simulation') pointSize: 45);
 		add: (PHMorphContainer new add: nfaView);
 		add: ((PHLabel text: regexString) pointSize: 30);
 		add: substringArea

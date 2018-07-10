@@ -1,4 +1,4 @@
-automata
+automata slides
 nfaSlide7ConstructionOverview
 	| regex |
 	regex := 'a(bc|d)*'.

@@ -1,4 +1,4 @@
-automata
+automata slides
 dfaSlide1
 	self addSlideWithCenterBox
 		add: (PHPage column

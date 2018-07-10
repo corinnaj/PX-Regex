@@ -2,7 +2,6 @@ initialization
 buildPresentation
 
 	^ self
-		nfaSlide4Simulation;
 		intro;
 		addSlide: self matchAllStringsQuiz0;
 		decisionTree1;
@@ -10,5 +9,6 @@ buildPresentation
 		decisionTree3;
 		inspector;
 		"addSlide: self uglyDfaPage;"
+		buildPresentationAutomata;
 		ourTools;
 		yourself

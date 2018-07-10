@@ -1,4 +1,4 @@
-automata
+automata slides
 nfaSlide9PostfixRegexToNFA	
 	| regex |
 	regex := 'a(bc|d)*'.

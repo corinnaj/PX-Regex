@@ -1,4 +1,4 @@
-automata
+automata slides
 summary
 	self addSlideWithCenterBox
 		add: ((PHLabel text: 'Summary') pointSize: 45);

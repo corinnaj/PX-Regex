@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"open" : "pf 7/9/2018 20:18" },
+		"open" : "pf 7/10/2018 09:23" },
 	"instance" : {
 		"buildMatchAndNotMatchQuiz0" : "lcj 7/9/2018 12:44",
-		"buildPresentation" : "pf 7/9/2018 20:54",
-		"buildPresentationAutomata" : "pf 7/9/2018 23:18",
+		"buildPresentation" : "pf 7/10/2018 09:23",
+		"buildPresentationAutomata" : "pf 7/10/2018 10:33",
 		"debugString" : "lcj 7/6/2018 16:54",
 		"decisionTree1" : "KB 7/9/2018 18:22",
 		"decisionTree2" : "KB 7/9/2018 18:22",
@@ -18,17 +18,18 @@
 		"introJokeB" : "lcj 7/9/2018 12:00",
 		"introSlide" : "lcj 7/9/2018 12:11",
 		"matchAllStringsQuiz0" : "KB 7/3/2018 16:31",
-		"matchAndNotMatchQuiz0" : "lcj 7/9/2018 12:47",
+		"matchAndNotMatchQuiz0" : "pf 7/10/2018 10:30",
 		"nfaSlide1DFASample" : "pf 7/9/2018 20:52",
 		"nfaSlide21NFASample" : "pf 7/9/2018 21:05",
 		"nfaSlide22NFASample" : "pf 7/9/2018 21:06",
 		"nfaSlide3SimulationDescription" : "pf 7/9/2018 21:08",
-		"nfaSlide4Simulation" : "pf 7/9/2018 21:09",
-		"nfaSlide5CrazyDFA" : "pf 7/9/2018 20:55",
-		"nfaSlide6Properties" : "pf 7/9/2018 22:10",
+		"nfaSlide4Simulation" : "pf 7/10/2018 10:32",
+		"nfaSlide51CrazyDFA" : "pf 7/10/2018 10:36",
+		"nfaSlide52CrazyDFA" : "pf 7/10/2018 10:36",
+		"nfaSlide6Properties" : "pf 7/10/2018 10:32",
 		"nfaSlide7ConstructionOverview" : "pf 7/9/2018 22:36",
 		"nfaSlide8RegexToPostfixRegex" : "pf 7/9/2018 22:45",
-		"nfaSlide9PostfixRegexToNFA" : "pf 7/9/2018 22:56",
+		"nfaSlide9PostfixRegexToNFA" : "pf 7/10/2018 09:41",
 		"nfaTool" : "lcj 7/9/2018 17:27",
 		"ourTools" : "lcj 7/9/2018 17:31",
 		"ourToolsIntro" : "lcj 7/9/2018 14:04",
@@ -38,4 +39,4 @@
 		"uglyDfaPage" : "KB 7/6/2018 15:23",
 		"visualExplanation" : "lcj 7/9/2018 17:08",
 		"whatIsRegex" : "lcj 7/9/2018 13:01",
-		"whyRegex" : "lcj 7/9/2018 13:00" } }
+		"whyRegex" : "pf 7/10/2018 09:25" } }

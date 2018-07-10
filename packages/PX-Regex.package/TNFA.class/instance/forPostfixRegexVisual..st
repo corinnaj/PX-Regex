@@ -96,5 +96,4 @@ forPostfixRegexVisual: postfixRegex
 	TStateMatch new patch: fragment outs.
 	initialState := fragment start.
 	
-
 ^PHScrollArea new policy: #(scroll scroll); content: targetMorph
