@@ -12,6 +12,7 @@ buildPresentation
 		decisionTree3;
 		empty;
 		literallyTobias;
+		literallyTobiasWithRegex;
 		inspectorTobias;
 		inspectorTobias2;
 		transitionDecisionsToNfa;
