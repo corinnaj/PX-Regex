@@ -4,7 +4,6 @@ buildPresentation
 	^ self
 		substringAndNFA;
 		intro;
-		addSlide: self matchAllStringsQuiz0;
 		decisionTree1;
 		decisionTree2;
 		inspector;

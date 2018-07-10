@@ -7,4 +7,5 @@ matchAndNotMatchQuiz0
 			align: #(center center));
 		add: ((self buildMatchAndNotMatchQuiz0)
 			addApplicationStyles: (PHStyle forAny fontSize: 24);
+			minSize: 400 @ 200;
 			align: #(center center))

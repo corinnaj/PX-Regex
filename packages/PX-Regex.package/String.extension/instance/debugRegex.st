@@ -1,4 +1,8 @@
 *PX-Regex
 debugRegex
 
-	RegexExplanationTool openWithText: self
+	TheUltimateRegexTool new
+		regex: self;
+		subtoolsMatchRegex;
+		openInWindow;
+		yourself
