@@ -1,5 +1,5 @@
-automata slides
-buildPresentationAutomata
+initialization
+automata
 
 	^ self 
 		dfaSlide1; 
@@ -15,4 +15,4 @@ buildPresentationAutomata
 		nfaSlide7ConstructionOverview;
 		nfaSlide8RegexToPostfixRegex;
 		nfaSlide9PostfixRegexToNFA;
-		summary 
+		recap 

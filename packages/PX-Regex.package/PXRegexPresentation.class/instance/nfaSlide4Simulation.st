@@ -10,7 +10,7 @@ nfaSlide4Simulation
 			multiLine: true;
 			pointSize: 30.
 	
-	nfaView := TNFAView new showTNFAFor: regexString.
+	nfaView := TNFAView new showTNFAFor: regexString; isHighlightingSubmatches: false.
 	
 	regexArea := (PHRegexTextArea text: regexString) nfaView: nfaView.
 	

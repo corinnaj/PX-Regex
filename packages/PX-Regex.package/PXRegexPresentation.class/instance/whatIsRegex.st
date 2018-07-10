@@ -2,9 +2,11 @@ intro
 whatIsRegex
 
 	self addSlideWithCenterBox
-		add: ((PHLabel text: 'What exactly is a regex?')
+		add: ((PHLabel text: 'Regex')
 			pointSize: 30);
 		add: (PHWidget spacer);
 		add: (PHWidget spacer);
-		add: ((PHLabel markup: 'insert definition here')
-			pointSize: 24)
+		add: ((PHLabel text: 
+'- in theory: defining a regular language
+- in practice: finding out which (sub)strings match a pattern
+- implementation approaches: backtracking, NFA, DFA') pointSize: 24)
