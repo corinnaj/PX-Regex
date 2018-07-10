@@ -8,7 +8,7 @@ myExtent
 	width := 0.
 
 	builder submorphsBehind: self do: [:c |
-		c isDivider ifTrue: [ ^ width @ (endRow - startRow + 1 * c extent y)].
+		c isDivider ifTrue: [ ^ width @ (endRow - startRow + 1 * c sizeY)].
 		width := width + c extent x.
 		endRow := startRow max: c row].
 	
