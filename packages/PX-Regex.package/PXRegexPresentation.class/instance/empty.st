@@ -1,0 +1,3 @@
+automata slides
+empty
+	self addSlideWithCenterBox

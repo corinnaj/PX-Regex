@@ -8,9 +8,10 @@ buildPresentation
 		aOptional;
 		decisionTree1;
 		decisionTree2;
-		decisionTree3;
 		aAll;
+		decisionTree3;
 		"addSlide: self uglyDfaPage;"
 		buildPresentationAutomata;
+		empty;
 		ourTools;
 		yourself
