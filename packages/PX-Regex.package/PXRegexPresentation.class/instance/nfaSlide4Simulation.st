@@ -20,8 +20,7 @@ nfaSlide4Simulation
 		
 	substringArea when: #changed send:#matchRegex to: substringArea.
 
-	self addSlideWithCenterBox
-		add: ((PHLabel text: 'NFA - simulation') pointSize: 45);
+	(self addSlideWithCenterBoxAndTitle: 'NFA - Simulation')
 		add: (PHMorphContainer new add: nfaView);
 		add: ((PHLabel text: regexString) pointSize: 30);
 		add: substringArea

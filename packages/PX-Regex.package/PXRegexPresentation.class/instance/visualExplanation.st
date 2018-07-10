@@ -5,9 +5,9 @@ visualExplanation
 	x := RegexExplanationTool new
 			regex: '[a-zA-Z]+.[a-zA-z]+@hpi.de';
 			addApplicationStyles: (PHStyle forAny fontSize: 30);
-			minSize: 400 @ 200.
+			minSize: 600 @ 200.
 	x submorphs fourth visible: false.
 	x submorphs fifth visible: false.
 
-	self addSlideWithCenterBox
+	(self addSlideWithCenterBoxAndTitle: 'Syntax Explanation')
 		add: x

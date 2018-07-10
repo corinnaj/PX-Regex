@@ -1,9 +1,9 @@
 as yet unclassified
 decisionTree2
 
-	self addSlideWithCenterBox
+	(self addSlideWithCenterBoxAndTitle: 'Regex As Decisions:')
 		add: ((PHLabel markup: 'Example: <span color="#00f">''aaa''</span> matchesRegex: <span color="#f00">''a?a?a?aaa''</span>')
-			pointSize: 30);
+			pointSize: 36);
 		add: (PHMorphContainer new add: ((Form fromFileNamed: 'Entscheidungsbaum.png') asMorph))
 
 	

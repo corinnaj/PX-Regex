@@ -20,6 +20,6 @@ But don''t match something@test.'.
 		tool: regexArea;
 		matchRegex.
 
-	self addSlideWithCenterBox
+	(self addSlideWithCenterBoxAndTitle: 'Substring Matching')
 		add: regexArea;
 		add: substringArea

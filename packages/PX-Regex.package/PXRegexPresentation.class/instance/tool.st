@@ -1,5 +1,0 @@
-tool slides
-tool
-
-	self addSlideWithCenterBox
-		add: TheUltimateRegexTool new

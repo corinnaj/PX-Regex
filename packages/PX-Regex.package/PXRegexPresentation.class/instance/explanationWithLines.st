@@ -1,7 +1,7 @@
 tool slides
 explanationWithLines
 
-	self addSlideWithCenterBox
+	(self addSlideWithCenterBoxAndTitle: 'Test Cases')
 		add: (RegexExplanationTool new
 			minSize: 800 @ 200;
 			regex: '[a-zA-Z]+\.[a-zA-z]+@hpi\.de';

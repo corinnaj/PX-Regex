@@ -1,7 +1,5 @@
 automata slides
 nfaSlide1DFASample
-	self addSlideWithCenterBox
-		add: (PHPage column
-			expand: true;
-			add: ((PHLabel text: 'NFA - nondeterministic finite automaton') pointSize: 45);
-			add: (PHMorphContainer new add: (TNFAView forRegex: 'abc'))).
+
+	(self addSlideWithCenterBoxAndTitle: 'NFA - Nondeterministic Finite Automaton')
+		add: (PHMorphContainer new add: (TNFAView forRegex: 'abc'))

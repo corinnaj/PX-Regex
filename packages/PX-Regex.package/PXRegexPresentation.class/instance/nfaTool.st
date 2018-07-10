@@ -10,6 +10,6 @@ nfaTool
 	x := tool substringArea.
 	x addApplicationStyles: (PHStyle forAny fontSize: 30).
 
-	self addSlideWithCenterBox
+	(self addSlideWithCenterBoxAndTitle: 'Dynamic NFA')
 		add: tool;
 		add: x

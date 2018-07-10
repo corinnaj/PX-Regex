@@ -1,9 +1,7 @@
 tool slides
 debugString
 	
-	self addSlideWithCenterBox
-		add: ((PHLabel text: 'Easily debug regexes from code:')
-			pointSize: 30);
+	(self addSlideWithCenterBoxAndTitle: 'Quick Debugging')
  		add: (PHMorphContainer new minSize: 700 @ 400;
 			add: ((PluggableTextMorphPlus new
 				useDefaultStyler;

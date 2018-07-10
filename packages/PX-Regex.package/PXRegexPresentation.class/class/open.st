@@ -2,6 +2,6 @@ as yet unclassified
 open
 	self new
 		buildPresentation;
-		openInWindow
+		openInWindow;
 		"enterPresentationMode"
-		"showFirstSlide"
+		showFirstSlide
