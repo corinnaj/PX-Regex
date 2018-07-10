@@ -7,6 +7,7 @@ incrementAfterHover
 		counter := 0.
 		self stopSteppingSelector: #incrementAfterHover.
 		self showMatch.
+		self showNumberOfSteps.
 		^ self].
 	
 	self afterHover: (inspector record at:counter) third atIndex: counter.

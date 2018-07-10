@@ -29,11 +29,11 @@ show: aTNFA
 					arrowFrom: (stateToPosition at: state)
 					to: (stateToPosition at: targetState).
 					
-				label := StringMorph contents: state triggerLabel.
+				label := (PHLabel text: state triggerLabel) pointSize: 24; updateStyleProperties; resizeToPreferred.
 				transitionArrow vertices last x - transitionArrow vertices first x = 0 ifTrue: [
-					label position: transitionArrow vertices middle + (label fontToUse pointSize / 2 @ 0).
+					label position: transitionArrow vertices middle + (label width @ 0).
 				] ifFalse: [
-					label center: transitionArrow vertices middle - (0 @ (label fontToUse pointSize / 2)).
+					label center: transitionArrow vertices middle - (0 @ (label height)).
 				].
 				transitionArrow addMorph: label.
 				
