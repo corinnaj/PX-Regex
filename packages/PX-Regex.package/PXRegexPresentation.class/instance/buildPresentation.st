@@ -10,8 +10,11 @@ buildPresentation
 		decisionTree2;
 		aAll;
 		decisionTree3;
+		empty;
 		literallyTobias;
 		inspectorTobias;
+		inspectorTobias2;
+		transitionDecisionsToNfa;
 		"addSlide: self uglyDfaPage;"
 		buildPresentationAutomata;
 		empty;
