@@ -6,7 +6,7 @@
 		"aOptional" : "KB 7/10/2018 14:42",
 		"automata" : "pf 7/10/2018 14:20",
 		"buildMatchAndNotMatchQuiz0" : "lcj 7/9/2018 12:44",
-		"buildPresentation" : "KB 7/10/2018 14:28",
+		"buildPresentation" : "pf 7/10/2018 15:17",
 		"debugString" : "lcj 7/6/2018 16:54",
 		"decisionTree1" : "KB 7/10/2018 14:42",
 		"decisionTree2" : "KB 7/10/2018 14:42",
@@ -44,7 +44,6 @@
 		"substringArea" : "lcj 7/9/2018 17:12",
 		"tool" : "lcj 7/9/2018 17:01",
 		"transitionDecisionsToNfa" : "KB 7/10/2018 13:45",
-		"uglyDfaPage" : "KB 7/6/2018 15:23",
 		"visualExplanation" : "lcj 7/10/2018 11:22",
 		"whatIsRegex" : "pf 7/10/2018 11:07",
 		"whyRegex" : "lcj 7/10/2018 11:58" } }

@@ -16,8 +16,7 @@ buildPresentation
 		inspectorTobias;
 		inspectorTobias2;
 		transitionDecisionsToNfa;
-		"addSlide: self uglyDfaPage;"
-		buildPresentationAutomata;
+		automata;
 		empty;
 		ourTools;
 		yourself
