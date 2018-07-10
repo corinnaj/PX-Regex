@@ -3,7 +3,6 @@ buildPresentation
 
 	^ self
 		intro;
-		addSlide: self matchAllStringsQuiz0;
 		decisionTree1;
 		decisionTree2;
 		decisionTree3;
