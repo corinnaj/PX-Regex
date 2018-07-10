@@ -6,5 +6,5 @@ dfaSlide2
 			add: ((PHLabel text: 'DFA - deterministic finite automaton') pointSize: 45);
 			add: (PHMorphContainer new add: (TNFAView forRegex: 'abc')));
 			add: ((PHLabel text: 
-'- O(n) runtime
-- O(2^m) states/construction') pointSize: 30).
+'- O(n) runtime, where n = |string|
+- O(2^m) states/construction, where m = |regex|') pointSize: 30).
