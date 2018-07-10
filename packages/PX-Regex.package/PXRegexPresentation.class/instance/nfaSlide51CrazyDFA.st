@@ -21,7 +21,7 @@ nfaSlide51CrazyDFA
 	substringArea when: #changed send:#matchRegex to: substringArea.
 
 	self addSlideWithCenterBox
-		add: (PHPage "TODO: row" column
+		add: (PHPage row
 			add: (PHPage column 
 				add: ((PHLabel text: 'NFA to DFA - powerset construction') pointSize: 45);
 				add: (PHMorphContainer new add: nfaView);

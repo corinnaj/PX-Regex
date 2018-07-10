@@ -1,12 +1,12 @@
 {
 	"class" : {
-		"open" : "pf 7/10/2018 09:23" },
+		"open" : "lcj 7/10/2018 15:24" },
 	"instance" : {
 		"aAll" : "KB 7/10/2018 14:42",
 		"aOptional" : "KB 7/10/2018 14:42",
 		"automata" : "pf 7/10/2018 14:20",
 		"buildMatchAndNotMatchQuiz0" : "lcj 7/9/2018 12:44",
-		"buildPresentation" : "pf 7/10/2018 15:17",
+		"buildPresentation" : "KB 7/10/2018 16:06",
 		"debugString" : "lcj 7/6/2018 16:54",
 		"decisionTree1" : "KB 7/10/2018 14:42",
 		"decisionTree2" : "KB 7/10/2018 14:42",
@@ -17,6 +17,8 @@
 		"explanationWithLines" : "lcj 7/10/2018 15:05",
 		"inspector" : "lcj 7/10/2018 14:24",
 		"inspector2" : "lcj 7/10/2018 14:24",
+		"inspector2Before" : "KB 7/10/2018 15:45",
+		"inspectorBefore" : "KB 7/10/2018 15:43",
 		"inspectorTobias" : "KB 7/10/2018 14:38",
 		"inspectorTobias2" : "KB 7/10/2018 14:39",
 		"intro" : "lcj 7/10/2018 16:05",
@@ -31,7 +33,7 @@
 		"nfaSlide22NFASample" : "pf 7/9/2018 21:06",
 		"nfaSlide3SimulationDescription" : "pf 7/9/2018 21:08",
 		"nfaSlide4Simulation" : "pf 7/10/2018 14:27",
-		"nfaSlide51CrazyDFA" : "pf 7/10/2018 14:31",
+		"nfaSlide51CrazyDFA" : "lcj 7/10/2018 15:35",
 		"nfaSlide52CrazyDFA" : "pf 7/10/2018 14:33",
 		"nfaSlide6Properties" : "pf 7/10/2018 10:32",
 		"nfaSlide7ConstructionOverview" : "pf 7/9/2018 22:36",
