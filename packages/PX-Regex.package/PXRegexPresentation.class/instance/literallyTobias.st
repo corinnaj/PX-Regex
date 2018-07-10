@@ -2,4 +2,4 @@ as yet unclassified
 literallyTobias
 
 	self addSlideWithCenterBox
-		add: ((PHLabel text: '''Tobias''') pointSize: 35)
+		add: ((PHLabel markup: '<span color="#00f">''Tobias''</span>') pointSize: 35)

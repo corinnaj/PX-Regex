@@ -10,10 +10,14 @@ buildPresentation
 		decisionTree2;
 		aAll;
 		decisionTree3;
+		empty;
 		literallyTobias;
+		literallyTobiasWithRegex;
 		inspectorTobias;
+		inspectorTobias2;
+		transitionDecisionsToNfa;
 		"addSlide: self uglyDfaPage;"
-		automata;
+		buildPresentationAutomata;
 		empty;
 		ourTools;
 		yourself
