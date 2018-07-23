@@ -1,0 +1,1 @@
+The PXViewBuilderTests include some tests that helped us during development. It does not test everything, only a few particularly tricky parts of the ViewBuilder.

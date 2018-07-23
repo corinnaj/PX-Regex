@@ -1,4 +1,4 @@
-PX
+PX-Regex
 viewClass
 
 	^ RegexViewDivider
