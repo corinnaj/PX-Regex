@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 checkRegex
 
 	((stringEntry text) matchesRegex: (regexEntry text))

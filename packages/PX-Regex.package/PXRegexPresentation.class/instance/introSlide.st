@@ -1,4 +1,4 @@
-intro
+intro slides
 introSlide
 
 	^ PHPage column

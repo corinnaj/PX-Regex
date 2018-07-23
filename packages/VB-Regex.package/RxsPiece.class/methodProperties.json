@@ -4,11 +4,7 @@
 	"instance" : {
 		"atom" : "",
 		"character" : "",
-		"children" : "lcj 6/10/2018 20:11",
-		"color" : "lcj 5/7/2018 23:00",
-		"describe" : "lcj 6/5/2018 15:08",
 		"dispatchTo:" : "",
-		"explanation" : "lcj 5/14/2018 17:13",
 		"initializeAtom:" : "",
 		"initializeAtom:min:max:" : "",
 		"initializeOptionalAtom:" : "",
@@ -21,5 +17,4 @@
 		"isSingular" : "",
 		"isStar" : "",
 		"max" : "",
-		"min" : "",
-		"shouldBeDisplayed" : "lcj 5/8/2018 10:46" } }
+		"min" : "" } }

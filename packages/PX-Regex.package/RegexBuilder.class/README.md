@@ -1,0 +1,1 @@
+A RegexBuilder takes a regex String and uses the RxsParser to generate a tree structure from it. Different view buidlers exist to display the regex. Currently we have RegexTreeBuilder and RegexViewBuilder.

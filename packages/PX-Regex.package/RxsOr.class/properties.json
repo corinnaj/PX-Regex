@@ -1,0 +1,14 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "lcj 7/23/2018 14:32",
+	"instvars" : [
+		 ],
+	"name" : "RxsOr",
+	"pools" : [
+		 ],
+	"super" : "RxsNode",
+	"type" : "normal" }

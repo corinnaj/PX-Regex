@@ -3,11 +3,7 @@
 		 },
 	"instance" : {
 		"branch" : "",
-		"children" : "lcj 6/9/2018 17:29",
-		"describe" : "lcj 6/4/2018 17:01",
 		"dispatchTo:" : "",
 		"initializeBranch:regex:" : "",
 		"isNullable" : "",
-		"isRegex" : "lcj 6/4/2018 15:38",
-		"regex" : "",
-		"shouldBeDisplayed" : "lcj 6/5/2018 15:27" } }
+		"regex" : "" } }

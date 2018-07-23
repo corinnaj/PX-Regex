@@ -1,4 +1,4 @@
-intro
+intro slides
 whyRegex
 
 	(self addSlideWithCenterBoxAndTitle: 'What are regexes used for?')

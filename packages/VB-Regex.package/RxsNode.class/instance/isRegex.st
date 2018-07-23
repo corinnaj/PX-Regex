@@ -1,4 +1,0 @@
-PX
-isRegex
-
-	^ false

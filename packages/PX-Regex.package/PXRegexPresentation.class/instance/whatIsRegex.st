@@ -1,4 +1,4 @@
-intro
+intro slides
 whatIsRegex
 
 	(self addSlideWithCenterBoxAndTitle: 'Regex Definition')

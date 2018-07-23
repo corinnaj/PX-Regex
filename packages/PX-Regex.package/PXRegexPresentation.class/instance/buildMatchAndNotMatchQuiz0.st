@@ -1,4 +1,4 @@
-intro
+intro slides
 buildMatchAndNotMatchQuiz0
 
 	| page1 page2 |

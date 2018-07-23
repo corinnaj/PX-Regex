@@ -2,10 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"describe" : "lcj 4/28/2018 22:39",
 		"dispatchTo:" : "",
 		"initializeSelector:" : "",
 		"initializeSelector:negated:" : "",
 		"negated" : "",
-		"selector" : "",
-		"shouldBeDisplayed" : "lcj 5/7/2018 22:40" } }
+		"selector" : "" } }

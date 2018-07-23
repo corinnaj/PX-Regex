@@ -1,0 +1,4 @@
+*PX-Regex
+isRegex
+
+	^ false

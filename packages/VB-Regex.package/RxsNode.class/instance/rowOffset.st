@@ -1,4 +1,0 @@
-PX
-rowOffset
-
-	^ 0

@@ -1,4 +1,4 @@
-as yet unclassified
+regex decision slides
 decisionTree1
 
 	(self addSlideWithCenterBoxAndTitle: 'Regex As Decisions:')

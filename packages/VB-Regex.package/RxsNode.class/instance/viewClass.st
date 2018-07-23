@@ -1,4 +1,0 @@
-PX
-viewClass
-
-	^ RegexViewPart

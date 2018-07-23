@@ -1,4 +1,4 @@
-intro
+intro slides
 introJokeA
 
 	self addSlideWithCenterBox

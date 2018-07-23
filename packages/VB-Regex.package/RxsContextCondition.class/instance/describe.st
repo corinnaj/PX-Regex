@@ -1,4 +1,0 @@
-PX
-describe 
-
-	^ kind asString

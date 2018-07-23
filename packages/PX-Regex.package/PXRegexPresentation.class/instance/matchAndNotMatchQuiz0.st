@@ -1,4 +1,4 @@
-intro
+intro slides
 matchAndNotMatchQuiz0
 
 	self addSlideWithCenterBox

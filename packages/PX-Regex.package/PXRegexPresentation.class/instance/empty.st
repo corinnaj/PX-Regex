@@ -1,3 +1,3 @@
-as yet unclassified
+regex decision slides
 empty
 	self addSlideWithCenterBox

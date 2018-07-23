@@ -1,4 +1,4 @@
-as yet unclassified
+regex decision slides
 literallyTobiasWithRegex
 
 	self addSlideWithCenterBox

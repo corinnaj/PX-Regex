@@ -1,0 +1,14 @@
+{
+	"category" : "PX-Regex",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "lcj 7/23/2018 14:30",
+	"instvars" : [
+		 ],
+	"name" : "RxsDivider",
+	"pools" : [
+		 ],
+	"super" : "RxsNode",
+	"type" : "normal" }

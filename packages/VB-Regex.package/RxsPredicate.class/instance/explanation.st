@@ -1,4 +1,0 @@
-PX
-explanation
-
-	^ self describe

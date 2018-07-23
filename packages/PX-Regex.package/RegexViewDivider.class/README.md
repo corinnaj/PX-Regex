@@ -1,0 +1,1 @@
+A RegexViewDivider is a kind of RegexViewPart. They are used when subexpressions are used in regexes (e.g. with parenthesis). All view parts of the subexpression will be fitted inside this RegexViewDivider.
