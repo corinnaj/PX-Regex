@@ -1,4 +1,4 @@
-as yet unclassified
+regex decision slides
 inspector2
 
 	self addSlideWithCenterBox
