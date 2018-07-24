@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 stepSpeed: aNumber
 
 	stepSpeed := aNumber

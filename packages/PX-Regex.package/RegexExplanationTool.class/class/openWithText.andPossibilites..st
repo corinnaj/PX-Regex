@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 openWithText: aString andPossibilites: anArray
 
 	self newWithNoLine

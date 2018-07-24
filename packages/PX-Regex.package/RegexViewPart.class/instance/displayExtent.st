@@ -1,4 +1,4 @@
-constants
+accessing
 displayExtent 
 
 	^ self extent

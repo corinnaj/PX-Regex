@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 openForRegex: aRegexString
 
 	self new forRegex: aRegexString; openInHand

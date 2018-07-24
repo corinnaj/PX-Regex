@@ -1,17 +1,21 @@
-as yet unclassified
+initialize-release
 initialize
 
 	super initialize.
 	
-	self addStyleClass: #withPadding.
+	substringArea := (PHSubstringTextArea placeholder: 'Enter search text here...')
+			multiLine: true;
+			minRows: 5.
+	
+	regexArea := (PHRegexTextArea placeholder: 'Enter regex here ...')
+		when: #changed send: #buildView to: self;
+		when: #changed send: #matchRegex to: substringArea.
 		
-	self add: (regexViewRow := PHMorphContainer new
-			add: ((regexView := RegexViewBuilderForSubstringTool new forRegex: 'ab')
-				when: #subExpressionHovered send: #highlightSubstring: to: self)).
-	self add: (PHPage row
-			add: ((matchArea := PHHoverableTextArea placeholder: 'Enter search text here...')
-				when: #changed send: #matchRegex to: self;
-				multiLine: true;
-				minRows: 5;
-				when: #characterHovered send: #highlightSubExpression: to: self;
-				expand: true)).
+	substringArea
+		tool: regexArea;
+		matchRegex.
+	
+	self
+		add: regexArea;
+		add: (viewArea := PHMorphContainer new);
+		add: substringArea

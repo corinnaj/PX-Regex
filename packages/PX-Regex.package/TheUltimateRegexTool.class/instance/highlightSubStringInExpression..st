@@ -1,4 +1,4 @@
-as yet unclassified
+highlighting
 highlightSubStringInExpression: aString
 
 	(1 to: self regex size) do: [ :i | | subExpression |

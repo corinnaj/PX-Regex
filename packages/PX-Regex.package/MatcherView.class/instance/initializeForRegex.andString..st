@@ -1,4 +1,4 @@
-as yet unclassified
+initialize-release
 initializeForRegex: aRegexString andString: aString
 
 	| body header content |

@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newForTool: aTool
 
 	^ self new

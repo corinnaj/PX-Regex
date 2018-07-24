@@ -1,4 +1,4 @@
-as yet unclassified
+highlighting
 match: aString against: aRegexString ifFound: aBlock
 
 	| result |

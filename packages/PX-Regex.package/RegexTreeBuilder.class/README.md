@@ -1,0 +1,1 @@
+A RegexTreeBuilder is an option to display a regex. It creates a tree like structure to show the branching of a regex.

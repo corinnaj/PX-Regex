@@ -6,7 +6,6 @@ add: aBranchOrRegex at: aPoint from: anotherPoint
 	self addMorphBack: (RegexTreePart new
 		part: aBranchOrRegex;
 		center: aPoint;
-		color: Color white;
 		yourself).
 	
 	aPoint ~= anotherPoint ifTrue: [self addMorphBack: (LineMorph from: anotherPoint to: aPoint color: (Color gray alpha: 0.4) width: 3)].

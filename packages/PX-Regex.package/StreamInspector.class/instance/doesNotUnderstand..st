@@ -1,4 +1,4 @@
-as yet unclassified
+error handling
 doesNotUnderstand: aMessage
 
 	(#(atEnd position) includes: aMessage selector)  ifFalse: [

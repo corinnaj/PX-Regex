@@ -1,7 +1,8 @@
-as yet unclassified
+instance creation
 open
+
 	self new
 		buildPresentation;
 		openInWindow;
-		"enterPresentationMode"
+		enterPresentationMode;
 		showFirstSlide

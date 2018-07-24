@@ -1,4 +1,4 @@
-as yet unclassified
+highlighting
 highlightSubExpression: anIndex
 
 	| range subString |

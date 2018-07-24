@@ -1,4 +1,4 @@
-as yet unclassified
+matching
 matchRegex
 
 	self textKeepCursor: self text string.

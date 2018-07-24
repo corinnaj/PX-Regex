@@ -4,12 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "lcj 7/24/2018 21:58",
 	"instvars" : [
 		"tool",
 		"subexpressions" ],
 	"name" : "PHSubstringTextArea",
 	"pools" : [
 		 ],
-	"super" : "PHHoverableTextArea",
+	"super" : "PHTextArea",
 	"type" : "normal" }

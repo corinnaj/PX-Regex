@@ -1,4 +1,4 @@
-as yet unclassified
+highlighting
 subStringSelected: aString
 
 	self removeHighlights.

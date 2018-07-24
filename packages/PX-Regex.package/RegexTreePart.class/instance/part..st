@@ -3,4 +3,6 @@ part: aPart
 
 	part := aPart.
 	
-	self contents: aPart describe
+	self
+		contents: aPart describe;
+		color: aPart color

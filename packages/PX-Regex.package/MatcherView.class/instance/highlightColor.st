@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 highlightColor
 
 	^ Color sky

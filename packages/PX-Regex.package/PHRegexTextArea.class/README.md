@@ -1,0 +1,1 @@
+A PHRegexTextArea is a simple implementaion which can be used as a tool for the PHSubstringTextArea instead of the full tool (TheUltimateRegexTool). We mostly needed this for the presentation, but it is used in the SubstringTool as well.

@@ -1,4 +1,4 @@
-as yet unclassified
+highlighting
 getSubStringIndexForIndex: anIndex
 
 	subexpressions ifNil: [^ nil].

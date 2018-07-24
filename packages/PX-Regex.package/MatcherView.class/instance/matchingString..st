@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 matchingString: aString
 
 	matchingString := aString

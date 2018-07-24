@@ -4,13 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "lcj 7/23/2018 13:03",
+	"commentStamp" : "lcj 7/24/2018 22:00",
 	"instvars" : [
-		"strings",
 		"matches",
 		"matchesNot",
 		"matchesArea",
-		"notMatchesArea",
 		"matchesNotArea",
 		"regexArea",
 		"explanation" ],

@@ -1,4 +1,4 @@
-constants
+initialize-release
 initialize 
 
 	super initialize.

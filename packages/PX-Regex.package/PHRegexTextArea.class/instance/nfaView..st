@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 nfaView: aView
 
 	nfaView := aView

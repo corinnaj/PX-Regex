@@ -1,4 +1,4 @@
-as yet unclassified
+examples
 exampleFindRegex
 
 	| page1 page2 page3 |

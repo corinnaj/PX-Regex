@@ -1,3 +1,3 @@
-as yet unclassified
+actions
 toggleNfaSubmatchHighlighting
 	self nfaView isHighlightingSubmatches: self nfaView isHighlightingSubmatches not.

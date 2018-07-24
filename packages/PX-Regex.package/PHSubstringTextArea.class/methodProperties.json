@@ -4,8 +4,10 @@
 	"instance" : {
 		"getSubStringIndexForIndex:" : "lcj 7/4/2018 13:26",
 		"highlightSubExpression:" : "pf 7/8/2018 11:55",
-		"initialize" : "lcj 7/2/2018 10:42",
-		"matchRegex" : "lcj 7/2/2018 12:35",
+		"initialize" : "lcj 7/24/2018 20:39",
+		"keyStroke:" : "lcj 7/24/2018 20:42",
+		"matchRegex" : "lcj 7/24/2018 21:32",
+		"mouseMove:" : "lcj 7/24/2018 20:42",
 		"regex" : "lcj 6/29/2018 11:58",
 		"tool" : "lcj 6/29/2018 13:12",
 		"tool:" : "lcj 6/29/2018 13:12" } }

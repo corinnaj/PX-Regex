@@ -4,12 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "lcj 7/24/2018 22:15",
 	"instvars" : [
 		"part",
-		"hovered",
 		"builder",
-		"range",
 		"row" ],
 	"name" : "RegexViewPart",
 	"pools" : [

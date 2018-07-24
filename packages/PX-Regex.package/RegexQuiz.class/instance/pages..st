@@ -1,4 +1,4 @@
-as yet unclassified
+initialize-release
 pages: anArray
 
 	super pages: anArray.

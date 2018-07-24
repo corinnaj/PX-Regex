@@ -1,4 +1,4 @@
-as yet unclassified
+ui
 showNumberOfSteps
 
 	headerLabel visible: true

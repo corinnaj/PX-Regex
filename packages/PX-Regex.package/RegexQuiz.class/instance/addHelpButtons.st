@@ -1,4 +1,4 @@
-as yet unclassified
+initialize-release
 addHelpButtons
 
 	self  pages allButLastDo: [:p | | button |

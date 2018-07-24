@@ -1,13 +1,7 @@
 {
 	"class" : {
-		"new" : "lcj 6/29/2018 10:59",
 		"newWithoutInput" : "lcj 6/29/2018 10:59" },
 	"instance" : {
-		"addRegexField" : "lcj 6/29/2018 11:23",
-		"buildView" : "lcj 6/29/2018 10:58",
-		"highlightMatches" : "KB 6/28/2018 12:00",
-		"highlightSubExpression:" : "KB 6/26/2018 19:15",
-		"initialize" : "lcj 6/29/2018 11:18",
-		"matchRegex" : "lcj 6/29/2018 11:10",
-		"regex" : "lcj 6/29/2018 10:57",
-		"regex:" : "lcj 6/29/2018 11:23" } }
+		"buildView" : "lcj 7/24/2018 21:49",
+		"initialize" : "lcj 7/24/2018 21:50",
+		"regex" : "lcj 7/24/2018 21:40" } }

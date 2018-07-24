@@ -1,5 +1,4 @@
-as yet unclassified
+actions
 showHelp: aRegex
 
-	self currentPage add: (RegexExplanationView new forRegex: aRegex) at: 3.
-	self disabled: true
+	self currentPage add: (RegexExplanationView new forRegex: aRegex) at: 3

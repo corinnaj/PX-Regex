@@ -1,4 +1,4 @@
 constants
 lineGap
 
-	^ 30
+	^ 50
