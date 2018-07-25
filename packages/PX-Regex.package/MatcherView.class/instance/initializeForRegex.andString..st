@@ -5,11 +5,11 @@ initializeForRegex: aRegexString andString: aString
 	super initialize.
 	
 	self matchingString: aString.
-	self matcher:aRegexString asRegex.
+	self matcher: aRegexString asRegex.
 	inspector := StreamInspector new.
 	counter := 0.
 	stepSpeed := 250.
-	self matcher matchesStream: (inspector matcher: self matcher; myGuy: (ReadStream on: aString)).
+	self matcher matchesStream: (inspector matcher: self matcher; stream: (ReadStream on: aString)).
 	
 	content := (PHPage column
 				addStyleClass: #noSpacing;
@@ -25,7 +25,7 @@ initializeForRegex: aRegexString andString: aString
 		collapsed: true).
 	
 	header := PHCardHeader new
-			add: (headerLabel := (PHLabel markup: '<b>Number of Steps total: ', inspector record size,  '</b>') visible: false);
+			add: (headerLabel := (PHLabel markup: '<b>Number of Steps total: ', inspector record size,  '</b>'));
 			when: #clicked send: #toggleCollapsed to: body;
 			yourself.
 	

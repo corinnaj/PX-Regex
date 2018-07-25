@@ -1,14 +1,14 @@
-as yet unclassified
+ui
 prettyPrint: aContext and: aMessage
 
 	matcher ifNil: [^ ''].
 
-	aContext selector == #restoreState: ifTrue: [^ 'Backtrack from ', myGuy position, ' to ', aMessage arguments first].
+	aContext selector == #restoreState: ifTrue: [^ 'Backtrack from ', stream position, ' to ', aMessage arguments first].
 
 	(aContext receiver isKindOf: RxmSubstring)
-		ifTrue: [^ 'Substring for ', ((aContext receiver instVarNamed: #sample)), ' at ', myGuy position asString].
+		ifTrue: [^ 'Substring for ', ((aContext receiver instVarNamed: #sample)), ' at ', stream position asString].
 	
 	(aContext receiver isKindOf: RxmPredicate)
-		ifTrue: [^ 'Predicate for ', ((aContext receiver instVarNamed: #predicate) at: 1) printString, ' at ', myGuy position asString].
+		ifTrue: [^ 'Predicate for ', ((aContext receiver instVarNamed: #predicate) at: 1) printString, ' at ', stream position asString].
 	
-	^ {'unknown'. aContext. 'at'. myGuy position}
+	^ {'unknown'. aContext. 'at'. stream position}

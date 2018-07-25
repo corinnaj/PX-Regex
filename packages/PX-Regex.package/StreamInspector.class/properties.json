@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "lcj 7/25/2018 13:35",
 	"instvars" : [
-		"myGuy",
+		"stream",
 		"matcher",
 		"record" ],
 	"name" : "StreamInspector",
