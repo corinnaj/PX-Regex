@@ -1,0 +1,1 @@
+A TState is a state in a TNFA. This is an abstract class.

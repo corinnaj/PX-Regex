@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "pf 5/30/2018 12:53",
+	"commentStamp" : "pf 7/25/2018 11:42",
 	"instvars" : [
 		"initialState" ],
 	"name" : "TNFA",

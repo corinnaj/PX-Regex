@@ -40,7 +40,7 @@ Russ Cox' license:
  
 
 Instance Variables
-	initialState:		<Object>
+	initialState:		TState
 
 initialState
-	- xxxxx
+	- The state the NFA starts in. All other states are reachable by recursively following the outgoing edges / transitions (TState >> outs).
