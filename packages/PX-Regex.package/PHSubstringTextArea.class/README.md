@@ -1,4 +1,4 @@
-A PHSubstringTextArea can be used to highlight all matches of a regex in a longer text.
+A PHSubstringTextArea highlights all matches of a regex in a longer text.
 
 Instance Variables
 	subexpressions: An OrderedCollection of ranges where a match for the regex was found.

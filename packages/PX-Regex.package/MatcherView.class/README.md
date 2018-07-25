@@ -1,6 +1,6 @@
-A MatcherView is a widget that displays the steps needed for a specific string to be against a specific regex (as implemented by VB-Regex) and wether or not the match was successful.
+A MatcherView is a widget that displays the steps needed for a string to match against a regex (as implemented by VB-Regex) and if a successful match was found.
 
-Clicking on the card header will reveal all steps. Steps can be hovered to display step number and currently matched substring.
+Clicking on the card header will reveal all individual steps. Steps can be hovered to display step number and highlight currently matched substring.
 
 Instance Variables
 	counter: number of step currently at (while stepping)
@@ -10,4 +10,4 @@ Instance Variables
 	matcher: RxMatcher generated for the given regex
 	matchingString: string to be matched against
 	pos: label that displays the current step number
-	stepSpeed: time between steps, the lower the faster it will be
+	stepSpeed: time between steps, where lower means faster
