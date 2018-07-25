@@ -9,7 +9,7 @@ isNegated
 	- whether this triggers when a character in trigger is read, or when when a character NOT in trigger is read. corresponds to the regex constructs [abc] vs. [^abc]
 
 out
-	- points at the TState that will be active when this triggers. may point to nil ONLY during TNFA construction
+	- points at the TState that will be active when this triggers. May point to nil ONLY during TNFA construction
 
 trigger
 	- the set of characters that will trigger a transition from this TState to out

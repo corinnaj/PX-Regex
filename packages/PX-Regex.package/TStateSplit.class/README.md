@@ -1,4 +1,4 @@
-A TStateSplit is a TState with no trigger (-> epsilon transitions) and exactly two outgoing edges. Whenever a TNFA enters a TStateSplit it immediately leaves it again to enter both TStates out and out2.
+A TStateSplit is a TState with no trigger (-> epsilon transitions) and exactly two outgoing edges. Whenever a TNFA enters a TStateSplit, it immediately leaves it again to enter both TStates out and out2.
 
 Instance Variables
 	isAlternation:		bool

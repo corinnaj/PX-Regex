@@ -1,6 +1,6 @@
 A TNFA is an implementation of Thompson's non-deterministic finite automaton algorithm for regular expression matching.
 
-This is basically Russ Cox' C-implementation as published on http://swtch.com/~rsc/regexp/ translated to Smalltalk.
+This is in essence Russ Cox' C implementation as published on http://swtch.com/~rsc/regexp/ translated to Smalltalk.
 Russ Cox' license:
 /*
  * Regular expression implementation.
