@@ -1,4 +1,4 @@
-as yet unclassified
+matching
 addPossibilities: anArray
 
 	anArray do: [:a |

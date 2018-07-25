@@ -4,5 +4,6 @@
 	"instance" : {
 		"container" : "lcj 5/9/2018 17:18",
 		"displayExplanation:" : "lcj 7/1/2018 22:16",
-		"forRegex:" : "lcj 6/29/2018 20:21",
-		"initialize" : "lcj 7/9/2018 14:05" } }
+		"forRegex:" : "lcj 7/25/2018 11:49",
+		"initialize" : "lcj 7/9/2018 14:05",
+		"invalidRegexText" : "lcj 7/25/2018 12:04" } }

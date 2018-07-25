@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 checkRegex
 	
 	[RxParser new parse: regexArea text] on: Error do: [^ self].

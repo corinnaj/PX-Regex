@@ -1,11 +1,14 @@
-as yet unclassified
+updating
 forRegex: aRegexString
 
-	self container
+	self displayExplanation: ''.
+
+	[self container
 		add: (RegexViewBuilder new
 			forRegex: aRegexString;
 			position: self container position;
 			when: #displayExplanation send: #displayExplanation: to: self);
-		calculateSizeForWidth: 0;
 		expand: true;
-		align: #(center top)
+		align: #(center top)] on: Error do: [:e |
+			self displayExplanation: self invalidRegexText.
+			e return: false].

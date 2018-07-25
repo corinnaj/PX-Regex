@@ -1,18 +1,17 @@
-as yet unclassified
+matching
 matchRegex
 
-	self displayExplanation: ''.
-
-	[container
-		removeAllMorphs;
-		add: (RegexViewBuilder new
-			forRegex: regex text;
-			position: container position;
-			when: #displayExplanation send: #displayExplanation: to: self)] on: Error do: [:e |
-				self displayExplanation: self invalidRegexText.
-				e return: false].
+	container removeAllMorphs.
+		
+	[(self regex notEmpty) ifTrue: [
+		container add: (RegexExplanationView new
+			forRegex: self regex;
+			minSize: self width @ 0;
+			position: container position)
+		]] on: Error do: [ #() ].
 	
-	(self submorphs allButFirst: 4) do: [:row |
+	(self submorphs allButFirst: 3) do: [:row |
+		row submorphs second visible: true; removeAllMorphs.
 		([row firstSubmorph text matchesRegex: regex text] on: Error do: [:e | e return: false])
-			ifTrue: [row submorphs second visible: true; removeAllMorphs; addStyleClass: #success; removeStyleClass: #danger; add: PHIcon iconCheck]
-			ifFalse: [row submorphs second visible: true; removeAllMorphs; addStyleClass: #danger; removeStyleClass: #success; add: PHIcon iconRemove]]
+			ifTrue: [row submorphs second addStyleClass: #success; removeStyleClass: #danger; add: PHIcon iconCheck]
+			ifFalse: [row submorphs second addStyleClass: #danger; removeStyleClass: #success; add: PHIcon iconRemove]]

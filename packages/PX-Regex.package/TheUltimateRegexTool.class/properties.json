@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "lcj 7/25/2018 12:24",
 	"instvars" : [
 		"leftColumn",
 		"rightColumn",
@@ -17,7 +17,6 @@
 		"nfaContainer",
 		"nfaScrollArea",
 		"fullPage",
-		"nfaStepRegex",
 		"efficiencyTextArea",
 		"matcherContainer",
 		"efficiencyArea" ],

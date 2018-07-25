@@ -1,0 +1,4 @@
+matching
+regex
+
+	^ regex text

@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 toggleExplainRegex
 
 	self updateExplanation.

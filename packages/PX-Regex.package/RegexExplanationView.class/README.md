@@ -1,1 +1,1 @@
-A RegexExplanationView is a widget that explains a specific regex, by using a RegexViewBuilder. It also has a text area to display the explanation of each part when hovered.
+A RegexExplanationView is a widget that explains a specific regex, by using a RegexViewBuilder. It also has a text area to display the explanation of each part when hovered. It is used by multiple widget in this project.
