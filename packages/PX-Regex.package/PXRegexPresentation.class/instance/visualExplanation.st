@@ -7,7 +7,6 @@ visualExplanation
 			addApplicationStyles: (PHStyle forAny fontSize: 30);
 			minSize: 600 @ 200.
 	x submorphs fourth visible: false.
-	x submorphs fifth visible: false.
 
 	(self addSlideWithCenterBoxAndTitle: 'Syntax Explanation')
 		add: x
