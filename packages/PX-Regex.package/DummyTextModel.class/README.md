@@ -1,1 +1,1 @@
-This was used for the presentation only, so that we could have a working Workspace.
+Used for the presentation only, so that it could have a funcioning Workspace.
