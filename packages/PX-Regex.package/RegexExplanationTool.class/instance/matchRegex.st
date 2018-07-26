@@ -6,7 +6,7 @@ matchRegex
 	[(self regex notEmpty) ifTrue: [
 		container add: (RegexExplanationView new
 			forRegex: self regex;
-			minSize: self width @ 0;
+			minSize: (self width - self padding directionsAsPoint x) @ 0;
 			position: container position)
 		]] on: Error do: [ #() ].
 	
